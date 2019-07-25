@@ -65,3 +65,98 @@ module.exports = {
 那么运行的 npm run bundle 就是运行了 npx webpack
 
 ## webpack 核心概念
+webpack 默认直到如何打包 js 文件，但对于图片文件并不知道怎么打包，需要我们自己配置。在 webpack.config.json 文件中配置 module 对象：  
+```const path = require("path");
+module.exports = {
+
+    mode: "production"
+    entry : "./index.js",
+    // 当 webpack 不知道怎么打包模块的时候，就会来 module 对象看一下应该怎么配置
+    // 打包图片模块，需要安装 file-loader
+    module: {
+        module: {
+            rules: [
+                {
+                    test: /\.png|$/,
+                    use: {
+                        loader: 'file-loader'
+                    }
+                }
+            ]
+        },
+    }
+    output: {
+
+        filename : "bundle.js",
+
+
+        path: path.resolve(__dirname, "bundle")
+    }
+}
+```   
+这样再运行 npm run bundle 或者 npx webpack 就可以把图片也打包成功了。会把打包的图片和 js 文件都放在默认的 dist 文件夹中。也就是说，要想打包图片文件，我们必须要下载 file-loader。使用下载的命令是  
+ ```npm install file-loader -D```   
+实际上，file-loader 打包的图片最终结果是一个图片的地址。可以去看 webpack 的官方文档查看各种 loader 的使用方法和范围。loader 就是一个打包方案。
+
+#### 使用 loader 打包静态图片资源
+如何用 webpack 打包图片的时候，可以改变图片名称。可以在 options 的匹配项里面进行配置     
+```const path = require("path")
+module.exports = {
+    mode: 'production',
+    entry : "./src/index.js",
+    module: {
+        rules: [
+            {
+                test: /\.(jpg|png|gif)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        // 配置的图片和之前没有配置的名字和后缀一模一样
+                        name:'[name].[ext]',
+                        // 当遇到图片文件的时候，会把打包后的文件放在 dist 下的 imgs 文件夹中
+                        outputPath: 'imgs/'
+                    }
+                }
+            }
+        ]
+    },
+    output: {
+        filename : "bundle.js",
+        path: path.resolve(__dirname, "dist")
+    }
+}```
+
+
+#### url-loader
+url-loader 可以代替 file-loader 打包。首先先安装 url-loader  
+```npm install url-loader -D```  
+然后在 webpack.confij.json 文件中，将 file-loader 替换成 url-loader 可以正常打包，图片在网页中也会显示正常，但在 bist 目录下并没有 img 文件，也没有出现打包好的图片文件。这是因为在用 url-loader 打包图片的时候，他会把图片转化成 base64 的字符串，存在 bundle.js 里面，而不是像 file-loader 打包成单独的图片文件。url-loader 这样打包图片的好处是，把图片直接放在打包好的 js 文件中，节省了一次图片的 http 请求，但是如果图片特别大，打包成的 JS 文件也会特别大，那么加载这个 js 文件的时间就会很长，那么就有可能在一开始很长的时间里面，页面什么都显示不出来。所以当图片非常小，只有几k的时候，用url-loader 打包，否则图片很大，就用 file-loader 打包。为了平衡，就在 url-loader 中进行进一步的配置，配置 limit
+
+```const path = require("path")
+module.exports = {
+    mode: 'production',
+    entry : "./src/index.js",
+    module: {
+        rules: [
+            {
+                test: /\.(jpg|png|gif)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        // 配置的图片和之前没有配置的名字和后缀一模一样
+                        name:'[name].[ext]',
+                        // 当遇到图片文件的时候，会把打包后的文件放在 dist 下的 imgs 文件夹中
+                        outputPath: 'imgs/',
+                        // 如果图片小于 2048 个字节，就用base64 的打包方式，打包完放在 js 文件里面
+                        // 如果图片大于 2048 个字节，就单独打包成图片文件。
+                        limit: 2048
+                    }
+                }
+            }
+        ]
+    },
+    output: {
+        filename : "bundle.js",
+        path: path.resolve(__dirname, "dist")
+    }
+}```
