@@ -1,6 +1,6 @@
-@[TCL]文章目录
+[TCL]
 
-### 安装 webpack，使用 webpack 配置文件
+## 安装 webpack，使用 webpack 配置文件
 
 #### webpack 是什么？
 webpack 帮助我们管理复杂的前端项目模块
@@ -63,3 +63,5 @@ module.exports = {
 我们经常用的是 npm run 语句进行打包，不用 npx 命令，那么我们怎么进行配置让 npm run 代替 npx 呢? 打开 项目里面的 package.json 文件，修改 script 对象里面的内容，将原来的内容删除，改成   
 ```"bundle" ： "webpack"```，  
 那么运行的 npm run bundle 就是运行了 npx webpack
+
+## webpack 核心概念
