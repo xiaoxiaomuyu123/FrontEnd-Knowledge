@@ -1,6 +1,6 @@
 
 
-## 安装 webpack，使用 webpack 配置文件
+## 1.安装 webpack，使用 webpack 配置文件
 
 #### webpack 是什么？
 webpack 帮助我们管理复杂的前端项目模块
@@ -249,10 +249,10 @@ module.exports = {
 plubins 很像 react 里面的生命周期函数，在一定的时间做某件事情。
 
 ##### 2. clean-webpack-plugin
-clean-webpack-plugin 不是 webpack 官方的插件，是一个第三方插件，但是安装方法都是一样的。他的作用是在第二次打包的时候，先将 dist 目录删除，然后再进行打包，从新生成 dist 目录。这样保证在第二次打包以后的 dist 文件中不会保留第一次打包时的 js 文件。
+clean-webpack-plugin 不是 webpack 官方的插件，是一个第三方插件，但是安装方法都是一样的。他的作用是在第二次打包的时候，先将 dist 目录删除，然后再进行打包，从新生成 dist 目录。这样保证在第二次打包以后的 dist 文件中不会保留第一次打包时的 js 文件。使用的时候要用解构的方法引入，使用的时候要进行实例化，但是不能传递任何参数。
 ```
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const CleanWepackPlugin = require("clean-webpack-plugin")
+const {CleanWepackPlugin} = require("clean-webpack-plugin")
 const path = require("path")
 
 module.exports = {
@@ -292,8 +292,8 @@ module.exports = {
         new HtmlWebpackPlugin({template: './src/index.html'}),
 
         // CleanWebpackPlugin 这个插件传入的参数是一个数组，
-        // 表示在使用 CleanWebpackPlugin 会删除 dist 目录下的所有内容，
-        new CleanWebpackPlugin(['dist'])
+        // 表示在使用 CleanWebpackPlugin 会删除 dist 目录下的所有内容，不传递参数
+        new CleanWebpackPlugin()
     ],
 
     output: {
