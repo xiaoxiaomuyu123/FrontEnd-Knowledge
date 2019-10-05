@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/directEmployment.iml" filepath="$PROJECT_DIR$/.idea/directEmployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FrontEnd-Konwledge.iml" filepath="$PROJECT_DIR$/.idea/FrontEnd-Konwledge.iml" />
     </modules>
   </component>
 </project>
