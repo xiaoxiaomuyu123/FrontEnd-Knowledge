@@ -1,0 +1,346 @@
+body {
+    /*常用初始化样式*/
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: 400 16px/1.5 PingFangSC-regular,Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+    color: #000;
+    background: #fafafc;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+div {
+    /*指定所有div的盒模型模式为border-box，记为IE盒模型，我们设置的宽高包括了内容区，border和padding*/
+    box-sizing: border-box;
+}
+ul {
+    /*去掉列表项的小圆点*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.search-index {
+    display: flex;
+    /*固定定位跟父级没有关系，以屏幕为准*/
+    position: fixed;
+    top: 0;
+    /*水平居中*/
+    left: 50%;
+    /*translate属性，移动的距离是以自身的宽度或高度确定的*/
+    transform: translateX(-50%);
+    /*宽度自适应*/
+    width: 100%;
+    /*指定最小宽度和最大宽度*/
+    min-width: 320px;
+    max-width: 540px;
+    /*移动端布局，宽度可变，但是高度一般情况下是固定的*/
+    height: 44px;
+    background: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.search {
+    flex: 1;
+    position: relative;
+    height: 28px;
+    border: 1px solid #ccc;
+    margin: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    /*行高是26px，不是28px，因为我们设置了border-box，内容区高度包含了border，所以实际的内容区宽度是28-2=26px*/
+    line-height: 26px;
+    color: #666;
+    /*设置padding-left，给放大镜图标留出空间*/
+    padding-left: 25px;
+    /*设置盒阴影*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search::before {
+    content: '';
+    /*display: block;*/
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -59px -279px;
+    background-size: 104px auto;
+}
+
+
+.user {
+    height: 44px;
+    width: 44px;
+    /*background-color: purple;*/
+    font-size: 12px;
+    color: #2eaae0;
+    /*文本居中*/
+    text-align: center;
+}
+
+a {
+    /*去除a标签文字的下面的横线*/
+    text-decoration: none;
+}
+
+/*使用伪元素添加图标*/
+.user::before {
+    content: '';
+    /*伪元素默认是行内元素，无法设置宽高，因此我们需要将其设置为块元素*/
+    display: block;
+    width: 23px;
+    height: 23px;
+    /*使用的是雪碧图，需要background-position指定背景图片的位置，最后两个属性表明的就是背景的位置*/
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+
+    /*指定图片的大小*/
+    background-size: 104px auto;
+    /*设置margin-bottom为负值，使得元素向上平移*/
+    margin: 4px auto -2px;
+}
+
+/*focus*/
+.focus {
+    margin-top: 44px;
+}
+.focus img {
+    width: 100%;
+}
+
+/*local-nav*/
+.local-nav {
+    display: flex;
+    height: 64px;
+    background-color: #ccc;
+    /*本地导航栏的宽度要比焦点图小，因此设置左右margin*/
+    margin: 3px 4px;
+    border-radius: 6px;
+}
+
+
+
+.local-nav li {
+    /*所有的子元素平分空间*/
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*
+使用属性选择器，class^=表示以某个字符串开头
+这样可以将多个元素的class属性设置相同的开头，只有一部分不同
+将这些元素需要的共有的样式放在一起
+不一样的样式再单独设计
+少写了很多重复的内容
+*/
+.local-nav li [class^="local-nav-icon"] {
+    background-color: #1b6d85;
+    width: 32px;
+    height: 32px;
+    background: url(../images/local-nav.png) no-repeat 0 0;
+    background-size: 32px auto;
+    /*弹性盒模型，子元素设置margin-top，不用担心外边距这叠*/
+    margin-top: 8px;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px ;
+}
+
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -64px ;
+}
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px ;
+}
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px ;
+}
+
+/*主导航栏*/
+nav {
+    /*
+    该元素的内容若超出了给定的宽度和高度属性，那么超出的部分将会被隐藏，不占位
+    给父元素设置的圆角属性，但是子元素没有设置，那么子元素内容会超出了父元素的范围，就会覆盖圆角
+    所以设置父元素的overflow为hidden，则可以将超出的部分切去，进而可以显示圆角
+    */
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+nav .nav-common {
+    display: flex;
+    height: 88px;
+    background-color: pink;
+}
+
+nav .nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+.nav-items {
+    flex: 1;
+    /*子元素还可以设置flex属性*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*-n+2表示选择前面两个元素，因为n从1开始*/
+.nav-items:nth-child(-n+2) {
+    /*因为我们设置的是border-box，所以border也会计算在元素内容宽度内*/
+    border-right: 1px solid #fff;
+    /*设置margin-right会被覆盖*/
+    /*margin-right: 1px;*/
+}
+
+.nav-items a {
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    /*设置文字阴影*/
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items a:nth-child(1) {
+    border-bottom: 1px solid #fff;
+}
+
+/*
+我们在上面给nav-items中的每个a标签设置了底部边框
+而第一个nav-items中只有一个a标签，所以第一个nav-items会底部会出现一个1px宽的空白
+从而与其他nav-items不对齐
+所以我们要清除第一个nav-items中a标签的底边框
+
+*/
+.nav-items:nth-child(1) a {
+    border: 0;
+    /*最后面的bottom和center表示背景图片的位置，即图片底边中心点与元素底边中心点重合*/
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+
+.nav-common:nth-child(1) {
+    /*添加背景线性渐变，注意加上浏览器厂商私有前缀*/
+    background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+.nav-common:nth-child(2) {
+    background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
+.subnav-entry {
+    display: flex;
+    border-radius: 8px;
+    background-color: lightblue;
+    margin: 0 4px;
+    padding: 3px 0;
+    flex-wrap: wrap;
+}
+
+.subnav-entry li {
+    /*子元素的flex属性除了设置数字以外，还可以设置百分数，是相对于父元素宽度而言
+      通过百分数设定一行有几个盒子
+    */
+    flex: 20%;
+}
+
+.subnav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subnav-entry-icon {
+    width: 28px;
+    height: 28px;
+    background-color: yellowgreen;
+    margin-top: 4px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+
+.sales-box {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    margin: 4px;
+}
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #bbb;
+}
+
+.sales-hd h2 {
+    position: relative;
+    /*使用一张图片代替h2标题，所以需要将h2标题隐藏*/
+    /*text-indent 属性规定文本块中首行文本的缩进。
+注释：允许使用负值。如果使用负值，那么首行会被缩进到左边*/
+    /*设置-999px，就是把该元素内的文字移到屏幕外面去，让我们肉眼看不见，
+    有时候是因为如某栏目名称的文字或者logo的文字已经用背景图片代替了，
+    我们不需要眼睛看见那些文字，但是希望搜索引擎可以搜到，就可以用这个把文字“隐藏”的属性。*/
+    text-indent: -999px;
+    overflow: hidden;
+
+}
+
+.sales-hd h2::after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: '';
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+
+.sales-hd .more {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    background: -webkit-linear-gradient(left, #ff506c, #ff6bc6);
+    border-radius: 15px;
+    padding: 3px 20px 3px 10px;
+    color: #fff;
+}
+
+.sales-hd .more::after {
+    /*使用伪元素，生成一个三角*/
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 9px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.row {
+    display: flex;
+}
+
+.row a {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+
+.row a img {
+    width: 100%;
+}
+
+.row a:first-child {
+    border-right: 1px solid #eee;
+}
