@@ -7,7 +7,7 @@ https://m.ctrip.com/html5/
 
 ## 一. 顶部搜索栏样式设计
 
-![](./readmePic/searchItem.png)
+![](readmePic/searchItem.png)
 
 #### 1. 设置搜索部分  
 
