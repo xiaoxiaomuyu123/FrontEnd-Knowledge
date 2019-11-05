@@ -85,9 +85,45 @@ lang 表示当前页面显示的语言。en 表示英文网页，zn-CN 表示中
     <dd>联系我们</dd>
 </dl>
 ```    
-                 
-                 
-### 6. 特殊字符   
+       
+### 6. 表单元素  
+      
+完整的表单由三部分组成：表单域，表单控件（表单元素），提示信息   
+   
+6.1 表单域   
+`<form action="url 地址" method=“提交方法 name=“表单域名称”></form>`  表示表单域，会把它所包括的所有的表单信息提交给服务器。其中 action 是后台服务器的地址。           
+
+6.2 表单元素（表单控件）         
+      
+- input 输入表单元素，input 是单标签元素  
+    
+    - 根据 type 属性的不同来指定不同的控件类型： 
+          
+        - text 定义单行的输入字段，用户可以输入文本，默认宽度是 20 个字符
+        - password 密码框
+        - radio 单选按钮，要注意不同的单选按钮要有相同的 name 属性值才能实现多选一.   
+        `男 <input type="radio" name="sex"> 女<input type="radio" name="sex"> `
+        - checkbox 复选框，多选框  
+        - submit 定义成提交按钮，提交按钮会把表单的数据提交给服务器。通过 value 值可以更改提交按钮上面显示的文字，默认显示的是 “提交”
+        - reset 重置按钮，清除表单域里面的所有数据。通过 value 值可以更改重置按钮上面显示的文字，默认显示的是 “重置”   
+          
+    - 根据 name 来区分不同的表单控件，单选按钮和复选框必须有 name 值，并且 name 值相同。      
+    - value 表示表单元素的值，也就是在表单框内的默认提示文字。类似于 ant-D 里面的 placeholder      
+    `用户名：<input type="text" name="username" value="请输入用户名">`   
+    `男 <input type="radio" name="sex" value="male"> 女<input type="radio" name="sex" value="female"> `  在提交表单的时候，会把选择的 male 和 female 发送到服务器。   
+    要注意，name 和 value 两个属性是每个表单都必须有的，是给后台人员使用的。
+    - checked 属性值是 checked，表示默认被选中。一般用于单选按钮或者复选框中的属性，应用场景是用户是否同意某某协议。
+    
+          
+- select 下拉菜单表单元素   
+        
+        
+- textarea 文本域表单元素
+        
+          
+            
+                       
+### 7. 特殊字符   
   
 网页中的一些特殊字符是显示不出来的，比如空格。我们用一些别的特殊字符来代替：   
     
