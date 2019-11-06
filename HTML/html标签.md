@@ -106,6 +106,8 @@ lang 表示当前页面显示的语言。en 表示英文网页，zn-CN 表示中
         - checkbox 复选框，多选框  
         - submit 定义成提交按钮，提交按钮会把表单的数据提交给服务器。通过 value 值可以更改提交按钮上面显示的文字，默认显示的是 “提交”
         - reset 重置按钮，清除表单域里面的所有数据。通过 value 值可以更改重置按钮上面显示的文字，默认显示的是 “重置”   
+        - button 定义一个普通可点击的按钮，通过 value 值来定义按钮上面显示的文字
+        - file 定义一个可以上传文件的按钮。点击之后就会出现本地计算机上面的硬盘显示。
           
     - 根据 name 来区分不同的表单控件，单选按钮和复选框必须有 name 值，并且 name 值相同。      
     - value 表示表单元素的值，也就是在表单框内的默认提示文字。类似于 ant-D 里面的 placeholder      
@@ -114,11 +116,26 @@ lang 表示当前页面显示的语言。en 表示英文网页，zn-CN 表示中
     要注意，name 和 value 两个属性是每个表单都必须有的，是给后台人员使用的。
     - checked 属性值是 checked，表示默认被选中。一般用于单选按钮或者复选框中的属性，应用场景是用户是否同意某某协议。
     
+- label 标签   
+   用于绑定一个表单元素，当点击 label 标签内的文本时，浏览器就会自动的将光标转到或者定位到对应的表单元素上，来提升用户体验。要实现上面的效果，label 标签的 for 属性的值必须要和 input 标签的 id 值一样。     
+   
+```
+<label for="sex">男</label>
+<input type="radio" name="sex" id="sex">
+``` 
           
-- select 下拉菜单表单元素   
+- select 下拉菜单表单元素，如果有 selected=“selected” 表示默认选中   
         
+```
+<select>
+    <option selected="selected">选项一</option>
+    <option>选项二</option>
+    <option>选项三</option>
+</select>
+```
         
-- textarea 文本域表单元素
+- textarea 文本域表单元素，支持用户在页面的文本框内写入多行文字   
+
         
           
             
