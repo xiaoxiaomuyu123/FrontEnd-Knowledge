@@ -2,9 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>form</title>
 </head>
 <body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <form>
+        <table width="500">
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type="radio" name="sex" id="male" checked> <label for="male">男</label>
+                    <input type="radio" name="sex" id="female"> <label for="female">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td>
+                    <select name="year">
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                    </select>
+                    <select name="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <select name="date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+            </tr>
 
+            <tr>
+                <td>所在地区</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>婚姻状况</td>
+                <td>
+                    <input type="radio" name="wedding" id="singal" checked> <label for="singal">未婚</label>
+                    <input type="radio" name="wedding" id="had"> <label for="had">离异</label>
+                </td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>喜欢的类型</td>
+                <td>
+                    <input type="radio" name="like" id="pretty" checked> <label for="pretty">御姐</label>
+                    <input type="radio" name="like" id="cute"> <label for="cute">可爱</label>
+                    <input type="radio" name="like" id="young"> <label for="young">小鲜肉</label>
+                    <input type="radio" name="like" id="elder"> <label for="elder">大叔</label>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <input type="textarea">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="免费注册">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" checked> 我同意注册条款和加入会员计划
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="#">我是会员，立即登录</a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h2>我承诺</h2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>年满18岁</li>
+                        <li>单身</li>
+                        <li>真诚交友</li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
+    </form>
 </body>
 </html>
