@@ -152,3 +152,9 @@ let arr1 = arr.toString().split(',').map((val)=>{
         })
         console.log(arr1)
 ```
+
+### 14. 把数字转换成中文    
+   
+```
+
+```
