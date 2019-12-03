@@ -55,7 +55,16 @@ isNaN 函数可以传入函数，首先调用函数的 valueOf（），确定该
    
 - String 类型   
   
-
+    - toString（）方法  
+    除了 null 和 undefined 以外，每个值都有 toString（）方法，一般用点语法调用，不需要在 toString（）内传递参数。如果要传递参数，意思是转换成几进制的字符串。  
+    
+    - String（）函数  
+    在不知道要转换的值是否是 null 或者 undefined 就用 String（n）函数，n 是传入到函数中需要转换成字符串的变量。如果传入的 n 的值是 undefined 或者 null，返回值就是 undefined 或 null。但是 undefined 和 null 没有 toString（）方法。  
+    
+#### 操作符   
+  
+- 加性操作符    
+字符串与数字相加，得到字符串；字符串和数字相减，得到数字
 
 ###2. 变量计算里的强制转换 4 种：  
 
