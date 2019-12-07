@@ -27,21 +27,31 @@ if(car !== null) {
    
    - 不要测试两个数字之和是不是 0.3   
    因为 0.1 + 0.2 可能等于 0.30000000000000003     
-   - 数值转换，把非数值转换成数值的函数 Number（），parseInt（），parseFloat（）  
+   - 数值转换，把非数值转换成数值的函数 Number（str），parseInt（str），parseFloat（str）  
    
-      - Number()  转换规则：   
+      - Number(str)函数  转换规则（一元加和 Number（str）函数的转换方法一样）：   
       1. true 变成 1，false 变成 0；undefined 变成 NaN， null 变成 0；
       2. 字符串转换成数字的规则：  
             1. 只包含数字，就直接转换成数字
             2. 空字符串转成 0，parseInt 空字符串转换成 NaN
-            3. 其他形式"bule"转换成 NaN  
-            4. 如果是对象，调用 valueOf（）方法，返回的结果不能转换成数字，就调用 toString（）方法。
-      - parseInt()  转换到第一个非数字字符为止。‘123abs’ 转换成 123，‘1.2’ 转换成 1，‘abs’ 转换成 NaN，空字符串转换成 NaN。空字符串和 Number 不一样，Number 转换成 0。  
-      此外，注意 parseInt（）还提供了第二个参数，用来标识第一个参数的是几进制。
-      - parseFloat() 
+            3. ‘123abc’ 转换成 NaN
+            4. 其他形式"bule"转换成 NaN  
+            5. 如果是对象，调用 obj.valueOf（）方法，返回的结果不能转换成数字，就调用 obj.toString（）方法。
+      - parseInt(str)  忽略字符串前面的空格，直到找到第一个非空格字符，如果第一个字符不是数字字符或者是负号，就返回 NaN；如果是数字，就转换到第一个非数字字符为止。  
+      ‘123abs’ 转换成 123，‘1.2’ 转换成 1，‘abs’ 转换成 NaN，空字符串转换成 NaN。空字符串和 Number 不一样，Number 转换成 0。  
+      此外，注意 parseInt（str, base）还提供了第二个参数，用来标识第一个参数的是几进制。
+      - parseFloat()    
+      
+     乘性操作符的操作数是非数字的时候，会将操作符先使用 Number() 函数转换成数字，再进行计算
+     
+转换函数|true|false|undefined|null|""|"123abc"|"1.1"|"12a.3"
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+Number() 一元加、乘性操作符|1|0|NaN|0|0|NaN|1.1|NaN
+parseInt()|NaN|NaN|NaN|NaN|NaN|123|1|12
+     
      
    - NaN 用于表示一个本来要返回数值的操作数，没有返回数值的情况。任何 NaN 的计算操作，结果都是 NaN; NaN 与任何值都不相等，包括它本身。所以 `NaN == NaN;   // false`   
-   有一个 isNaN 函数，用于检测传入的参数是否可以被转换成数字，不是数值返回 true，是数值返回 false   
+   有一个 isNaN（str） 函数，属于强制转换，用于检测传入的参数是否可以被转换成数字，不是数值返回 true，是数值返回 false   
       
  ```
   isNaN(NaN);   // true
