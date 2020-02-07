@@ -67,10 +67,37 @@ lang 表示当前页面显示的语言。en 表示英文网页，zn-CN 表示中
 ### 4. 表格标签   
    
 - `<table></table>` 表示整个表格
-- `<th></th>` 表示表头单元格。他与普通的 <tr> 标签的区别是：表头单元格里面的文字会加粗，并且会居中显示
+- `<th></th>` 表示表头单元格。他与普通的`<tr>` 标签的区别是：表头单元格里面的文字会加粗，并且会居中显示
 - `<tr></tr>` 表示表格的一行
 - `<td></td>` 表示表格的单元格    
-- `<thead></thead>` 和 `<tbody></body>` 能够语义化的表示表格的表头和主体部分。
+
+```
+<table>
+    <tr><th>姓名</th> <th>性别</th> <th>年龄</th> </tr>
+    <tr><td>Jame</td> <td>女</td> <td>17</td> </tr>
+    <tr><td>Jucy</td> <td>女</td> <td>28</td> </tr>
+    <tr><td>Tom</td> <td>男</td> <td>29</td> </tr>
+</table>
+```
+
+- `<thead></thead>` 和 `<tbody></body>` 能够语义化的表示表格的表头和主体部分。注意 th 是表头单元格，thead 是表头区域。这样语更加明确
+
+```
+<table align="center" cellpadding="20" cellspacing="0" border="1">
+    <thead>
+        <tr> <th>排名</th> <th>关键词</th> <th>趋势</th> <th>今日搜索</th> <th>最近七日</th> <th>相关连接</th></tr>
+    </thead>
+    <tbody>
+        <tr> <td>1</td> <td>鬼吹灯1</td> <td>趋势</td> <td>345</td> <td>123</td> <td><a href="#">百度</a>&nbsp;<a href="#">贴吧</a>&nbsp;<a href="#">图片</a></td></tr>
+        <tr> <td>2</td> <td>鬼吹灯2</td> <td>趋势</td> <td>345</td> <td>123</td> <td><a href="#">百度</a>&nbsp;<a href="#">贴吧</a>&nbsp;<a href="#">图片</a></td></tr>
+        <tr> <td>3</td> <td>鬼吹灯3</td> <td>趋势</td> <td>345</td> <td>123</td> <td><a href="#">百度</a>&nbsp;<a href="#">贴吧</a>&nbsp;<a href="#">图片</a></td></tr>
+        <tr> <td>4</td> <td>鬼吹灯4</td> <td>趋势</td> <td>345</td> <td>123</td> <td><a href="#">百度</a>&nbsp;<a href="#">贴吧</a>&nbsp;<a href="#">图片</a></td></tr>
+    </tbody>
+</table>
+```
+
+
+表格属性一般使用css来设置，也可以用html的属性设置
 
 ### 5. 列表标签    
    
@@ -86,6 +113,11 @@ lang 表示当前页面显示的语言。en 表示英文网页，zn-CN 表示中
 </dl>
 ```    
        
+- 合并单元格   
+跨行合并 `rowspan='合并单元格的个数'`       
+跨列合并 `colspan='合并单元格的个数'`     
+     
+
 ### 6. 表单元素  
       
 完整的表单由三部分组成：表单域，表单控件（表单元素），提示信息   
