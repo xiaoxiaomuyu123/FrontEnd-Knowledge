@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML/table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/表格案例小说排行榜.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/自定义列表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/表单练习.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/html标签.md" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/html标签.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/ES5基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS/ES5基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1569209321454" duration="11796000" />
       <workItem from="1569298233156" duration="10126000" />
       <workItem from="1569320948607" duration="40235000" />
-      <workItem from="1580178824663" duration="10334000" />
+      <workItem from="1580178824663" duration="16246000" />
     </task>
     <servers />
   </component>
