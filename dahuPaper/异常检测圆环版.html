@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异常检测</title>
+    <style>
+        /*#container {*/
+        /*    width: 600px;*/
+        /*    display: flex;*/
+        /*    flex-direction: row;*/
+        /*    justify-content: space-around;*/
+        /*}*/
+        /*.circle {*/
+        /*    width: 150px;*/
+        /*    height: 150px;*/
+        /*    background-color: transparent;*/
+        /*    !*border-image: linear-gradient(to right, #09b8ff, #ad1aee) 1 10;*!*/
+        /*    border: 20px solid;*/
+        /*    border-radius: 50%;*/
+        /*    border-image: linear-gradient(to right, #09b8ff, #ad1aee) 1 10;*/
+        /*}*/
+
+        #container {
+            display: flex;
+            width: 800px;
+            height: 300px;
+            background-color: #0C1B2E;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        /*
+        .circle{
+
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #09b8ff, #ad1aee);
+            border-radius: 50%;
+        }
+        .circle:after{
+            content: "";
+            display: block;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #0C1B2E;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        */
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border: 4px solid transparent;
+            border-radius: 50%;
+            background: transparent;
+            background-clip: padding-box;
+            padding: 10px;
+            /* just to show box-shadow still works fine */
+            box-shadow: 0 3px 9px #09b8ff, inset 0 0 9px #ad1aee;
+            margin:auto;
+        }
+        .circle:after {
+            position: absolute;
+            top: -4px; bottom: -4px;
+            left: -4px; right: -4px;
+            background: linear-gradient(#09b8ff, #ad1aee);
+            content: '';
+            z-index: -1;
+            border-radius: 50%;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        .first {
+            padding-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="circle xinLv">
+        <p class="first">异常数据比率</p>
+        <p>10%</p>
+    </div>
+    <div class="circle xueYa">
+        <p class="first">出现异常数据概率</p>
+        <p>3%</p>
+    </div>
+    <div class="circle xueYang">
+        <p class="first">风险度</p>
+        <p>60%</p>
+    </div>
+</div>
+</body>
+</html>

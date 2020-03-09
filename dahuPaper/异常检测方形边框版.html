@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container {
+            width: 800px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #0C1B2E;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            background-color: transparent;
+            border: 3px solid;
+            /*border-radius: 50%;*/
+            border-image: linear-gradient(to right, #0e68d8, #ad1aee) 1 10;
+            margin: auto;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <div class="circle xinLv">
+        <p>异常数据比率</p>
+        <p>10%</p>
+    </div>
+    <div class="circle xueYa">
+        <p>出现异常数据概率</p>
+        <p>3%</p>
+    </div>
+    <div class="circle xueYang">
+        <p>风险度</p>
+        <p>60%</p>
+    </div>
+</div>
+</body>
+</html>

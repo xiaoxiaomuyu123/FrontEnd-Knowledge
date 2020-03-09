@@ -100,5 +100,7 @@ line-height 用于设置行间的距离，也就是行高，可以控制文字�
    
 #### 3.3 外部样式表（链接式）   
 
-`<link rel="stylesheet" href="index.css" >`
+`<link rel="stylesheet" href="index.css" >`  
+  
+
 

@@ -4,6 +4,9 @@
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/仿新闻页面.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/仿新闻页面.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/html标签.md" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/html标签.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,11 +102,19 @@
       <workItem from="1569209321454" duration="11796000" />
       <workItem from="1569298233156" duration="10126000" />
       <workItem from="1569320948607" duration="40235000" />
-      <workItem from="1580178824663" duration="21653000" />
+      <workItem from="1580178824663" duration="23524000" />
+      <workItem from="1582634395537" duration="12456000" />
+      <workItem from="1583711330828" duration="4976000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582634416312">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1582634416312" />
   </component>
 </project>
