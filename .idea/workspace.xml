@@ -4,9 +4,9 @@
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/仿新闻页面.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/仿新闻页面.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/html标签.md" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/html标签.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/仿简单的新闻页面/img/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/仿简单的新闻页面/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/仿简单的新闻页面/仿新闻页面.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/仿简单的新闻页面/仿新闻页面.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +52,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\各个公司的面试问题总结" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\webSocket" />
     </key>
@@ -104,7 +106,8 @@
       <workItem from="1569320948607" duration="40235000" />
       <workItem from="1580178824663" duration="23524000" />
       <workItem from="1582634395537" duration="12456000" />
-      <workItem from="1583711330828" duration="4976000" />
+      <workItem from="1583711330828" duration="16384000" />
+      <workItem from="1584526019532" duration="1519000" />
     </task>
     <servers />
   </component>
@@ -116,5 +119,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1582634416312" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1583757990406">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583757990406" />
   </component>
 </project>

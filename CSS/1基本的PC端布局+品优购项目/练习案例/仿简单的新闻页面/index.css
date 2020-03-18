@@ -24,7 +24,12 @@ h1, .center{
 .gray {
     color: gray;
 }
-
+.search {
+    color: #666666;
+}
+.btn {
+    font-weight: bold;
+}
 p {
     font-size: 20px;
     line-height: 34px;
@@ -35,6 +40,9 @@ a {
     text-decoration: none;
 }
 
-p img {
-    margin:0 auto;
+/*p img {*/
+/*    text-align: center;*/
+/*}*/
+.pic {
+    text-align: center;
 }
