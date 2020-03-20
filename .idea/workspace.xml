@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/小米官网侧边导航栏.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
     </list>
@@ -105,7 +104,7 @@
       <workItem from="1580178824663" duration="23524000" />
       <workItem from="1582634395537" duration="12456000" />
       <workItem from="1583711330828" duration="16384000" />
-      <workItem from="1584526019532" duration="8399000" />
+      <workItem from="1584526019532" duration="10177000" />
     </task>
     <servers />
   </component>
