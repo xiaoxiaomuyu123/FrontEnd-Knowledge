@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/margin 导致的父元素的高度塌陷.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
     </list>
@@ -111,7 +110,7 @@
       <workItem from="1584526019532" duration="27339000" />
       <workItem from="1585106758994" duration="8583000" />
       <workItem from="1585177564550" duration="12001000" />
-      <workItem from="1585307484553" duration="25158000" />
+      <workItem from="1585307484553" duration="27398000" />
     </task>
     <servers />
   </component>
