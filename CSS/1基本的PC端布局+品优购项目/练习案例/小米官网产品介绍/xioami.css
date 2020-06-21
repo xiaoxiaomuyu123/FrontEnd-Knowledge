@@ -1,0 +1,20 @@
+body {
+    background-color: #f5f5f5;
+}
+.box {
+    background-color: white;
+    width: 234px;
+    height: 330px;
+}
+p {
+    text-align: center;
+}
+.image {
+    text-align: center;
+}
+.info {
+    color: gray;
+}
+.price {
+    color: orange;
+}

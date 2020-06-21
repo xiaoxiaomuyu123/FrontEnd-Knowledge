@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/产品模块.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css基本选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/css基本选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/padding是否能撑开盒子的练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/padding是否能撑开盒子的练习.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/设置背景图片案例/王者荣耀背景图片案例.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/设置背景图片案例/王者荣耀背景图片案例.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -44,6 +49,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\小米官网产品介绍\pic" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\各个公司的面试问题总结" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\webSocket" />
@@ -111,6 +118,14 @@
       <workItem from="1585106758994" duration="8583000" />
       <workItem from="1585177564550" duration="12001000" />
       <workItem from="1585307484553" duration="27398000" />
+      <workItem from="1586306905834" duration="3582000" />
+      <workItem from="1586335296823" duration="2294000" />
+      <workItem from="1587904634473" duration="52000" />
+      <workItem from="1587957791372" duration="12000" />
+      <workItem from="1587980993405" duration="2545000" />
+      <workItem from="1589441644793" duration="619000" />
+      <workItem from="1592264989897" duration="7606000" />
+      <workItem from="1592616594923" duration="14258000" />
     </task>
     <servers />
   </component>
@@ -118,10 +133,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582634416312">
+    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586316844539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1582634416312" />
+    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586316844539" />
     <state x="186" y="0" key="SettingsEditor" timestamp="1583757990406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
