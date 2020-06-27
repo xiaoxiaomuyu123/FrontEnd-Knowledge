@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动只会影响后面的标准流，不影响前面的标准流</title>
+    <style>
+        .normal1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .normal2 {
+            width: 300px;
+            height: 300px;
+            background-color: lightskyblue;
+        }
+        .float {
+            width: 240px;
+            height: 240px;
+            float: left;
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="normal1">1</div>
+    <div class="float">2</div>
+    <div class="normal2">3</div>
+</body>
+</html>

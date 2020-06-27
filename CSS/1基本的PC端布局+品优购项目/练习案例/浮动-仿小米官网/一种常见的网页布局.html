@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #header, #footer{
+            height: 200px;
+            background-color: pink;
+            margin-bottom: 14px;
+        }
+        #container {
+            width: 830px;
+            height: 430px;
+            background-color: #fff;
+            margin: 0 auto 10px;
+        }
+        #content1 {
+            height: 100px;
+            background-color: lightskyblue;
+            margin-bottom: 10px;
+        }
+        #content2 {
+            height: 100px;
+            background-color: lightskyblue;
+        }
+        #content2 li, #content3 li {
+            background-color: pink;
+            width: 200px;
+        }
+        #content2 li {
+            float: left;
+            height: 100px;
+        }
+        #content3 {
+            height: 200px;
+            background-color: lightskyblue;
+            margin-bottom: 10px;
+        }
+        #content3 li {
+            float: left;
+            height: 200px;
+        }
+        .margin-box {
+            margin-right: 10px;
+        }
+        
+        li {
+            list-style: none;
+            background-color: #fff;
+        }
+        /* ul 有一个自己自带的 padding，需要去除 */
+        ul {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<div id="container">
+    <div id="content1"></div>
+    <div id="content2">
+        <ul >
+            <li class="margin-box">1</li>
+            <li class="margin-box">2</li>
+            <li class="margin-box">3</li>
+            <li>4</li>
+        </ul>
+    </div>
+    <div id="content3">
+        <ul>
+            <li class="margin-box">1</li>
+            <li class="margin-box">2</li>
+            <li class="margin-box">3</li>
+            <li>4</li>
+        </ul>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
