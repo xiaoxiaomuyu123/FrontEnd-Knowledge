@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/float1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/float2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/float3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/一种常见的网页布局.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/常见页面布局2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/清除浮动的原因.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/清除浮动/清除浮动1-父元素 overflow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/清除浮动/清除浮动3-给父元素设置双伪元素.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/float1.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/float1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/float2.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/float2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/float3.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/float3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/一种常见的网页布局.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/一种常见的网页布局.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/常见页面布局2.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/常见页面布局2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/清除浮动的原因.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/清除浮动/清除浮动的原因.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动-仿小米官网/父元素 overflow.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/浮动/清除浮动/清除浮动2-after伪元素.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\浮动\清除浮动" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\小米官网产品介绍\pic" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\各个公司的面试问题总结" />
@@ -128,7 +132,7 @@
       <workItem from="1589441644793" duration="619000" />
       <workItem from="1592264989897" duration="7606000" />
       <workItem from="1592616594923" duration="17080000" />
-      <workItem from="1592997979458" duration="17599000" />
+      <workItem from="1592997979458" duration="25348000" />
     </task>
     <servers />
   </component>
