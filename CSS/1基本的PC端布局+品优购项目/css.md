@@ -740,17 +740,82 @@ li {
 }
 ```   
 
-- 
+- default：默认 小白箭头
+- pointer：小手
+- move：移动
+- text：文本
+- not-allowed：禁止
 
 
 #### 12.4.2 表单轮廓     
 
+去掉表单获得焦点时的蓝色边框线：
+
+```
+input {
+    outline: none;
+    // 或者   
+    outline: 0
+}
+```
 
 
-#### 12.4.3 防止表单被拖拽     
+#### 12.4.3 防止表单文本域被拖拽     
+
+如果被拖拽，会影响周围盒子的大小和布局     
+
+```
+textarea {
+    resize: none;
+}
+```
+
+textarea 标签分开的话，会在页面显示一些空格，要想没有空格，要让标签之间没有空格。想要在页面中的显示效果好，可以用 padding。      
 
 
+### 12.5 vertical-align 属性应用     
 
+用于设置 图片 或 表单（行内元素）和文字垂直对齐。
+
+![](./css_pic/vertical-align.png)     
+
+```
+img {
+    vertical-align: middle;
+}
+```
+
+`vertical-align : baseline | top | middle | bottom`      
+
+- baseline：默认，元素放在父元素的基线上   
+- top：
+- middle：
+- bottom：  
   
+![](./css_pic/jixian.png)  
+
+
+### 12.6 解决图片底部默认空隙的问题    
+
+当用 div 包裹住 img 标签的时候，图片下面会有一个默认的空白缝隙。原因是，图片和文字默认是基线对齐，会给文字留出一部分空间
+
+![](./css_pic/jixian1.png)     
+![](./css_pic/jixian2.png)
+
+
+解决方式：   
+
+- 设置图片的 vertical-align 属性，除了基线以外的对齐方式都行（推荐使用）    
+        
+  ```
+  img {
+      vertical-algn: middle;
+      vertical-algn: top;
+      vertical-algn: bottom;
+  }
+  ```
   
+- 把图片转换成块级元素   
+  原因是：只有行内元素或者行内块元素才会有 vertical-align 属性。  
   
+

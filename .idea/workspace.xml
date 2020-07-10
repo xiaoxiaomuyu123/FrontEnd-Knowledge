@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/css实现三角形.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/css实现对话框.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/固定定位.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/学成在线案例/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/学成在线案例/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/精灵图/精灵图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/视频网站鼠标移动盒子遮罩案例/视频网站鼠标移动盒子遮罩案例.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/轮播图/轮播图.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
     </list>
@@ -136,7 +128,7 @@
       <workItem from="1592264989897" duration="7606000" />
       <workItem from="1592616594923" duration="17080000" />
       <workItem from="1592997979458" duration="34243000" />
-      <workItem from="1593757059099" duration="51438000" />
+      <workItem from="1593757059099" duration="55914000" />
     </task>
     <servers />
   </component>
@@ -148,9 +140,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586316844539" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594285666843">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594354401935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594285666843" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594354401935" />
   </component>
 </project>
