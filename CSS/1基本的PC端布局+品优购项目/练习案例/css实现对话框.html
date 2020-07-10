@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            position: relative;
+            top: 0;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            /*background-color: lightgray;*/
+        }
+        .trangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            /*为了照顾兼容性 */
+            line-height: 0;
+            border: 10px solid transparent;
+            border-bottom: 10px solid pink;
+        }
+        .juxing {
+            width: 60px;
+            height: 60px;
+            background-color: pink;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="trangle"></div>
+</div>
+<div class="juxing"></div>
+</body>
+</html>

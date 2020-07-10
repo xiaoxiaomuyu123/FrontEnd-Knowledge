@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            position: relative;
+            width: 360px;
+            height: 240px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+        .box .cover {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+    /*    当鼠标经过 box 的时候，box 里面的 cover 显示出来 */
+        .box:hover .cover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="cover"></div>
+        <img src="pic/4.jpg" alt="">
+    </div>
+</body>
+</html>
