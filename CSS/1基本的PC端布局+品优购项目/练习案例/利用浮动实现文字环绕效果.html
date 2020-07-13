@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        .pic {
+            float:left;
+            width: 120px;
+            height: 60px;
+            background-color: blue;
+            margin-right: 10px;
+        }
+        .pic img {
+            width: 120px;
+            height: 60px;
+        }
+        p {
+            background-color: yellow;
+            white-space: normal;
+            /*overflow: auto;*/
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <div class="pic">
+            <img src="./pic/小米官网图片.png" alt="">
+        </div>
+        <p>
+            p 标签不自动换行的原因
+            1.英文会将不包含空格、换行的连续文本认为是一个词，所以在默认情况下不换行;
+            2.中文的话标点文字都是独立的，所以会自动换行;
+
+    </div>
+</body>
+</html>

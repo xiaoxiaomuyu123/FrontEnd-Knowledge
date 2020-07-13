@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            position: relative;
+            width: 100px;
+            height: 20px;
+            border: 1px solid orangered;
+            background-color: #fff;
+        }
+        .box .juxing {
+            width: 75px;
+            height: 20px;
+            background-color: orangered;
+        }
+        .box .trangle {
+            position: absolute;
+            top: 0px;
+            left: 55px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-right: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+        }
+
+    /*  普通的任意直角三角形  */
+
+        .trangle2 {
+            margin: 40px auto;
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+
+            border-right: 100px solid deeppink;
+
+            /* 1. 把下面的边框大小变为 0，也就是删除下边框 */
+            border-bottom: 0 solid orange;
+
+            /* 2. 把上面的边框变高，就可以挤得两边的三角形变高 */
+            border-top: 150px solid transparent;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="juxing"></div>
+        <div class="trangle"></div>
+    </div>
+
+    <div class="trangle2">
+
+    </div>
+</body>
+</html>
