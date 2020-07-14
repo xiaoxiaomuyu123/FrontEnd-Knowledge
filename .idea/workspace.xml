@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/制作梯形.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/页面页码.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css初始化/css_reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/html5语义化标签/html5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/nth-child.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/placeholder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/伪元素选择器.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
     </list>
@@ -45,6 +50,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/视频网站鼠标移动盒子遮罩案例/pic" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -56,7 +62,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,11 +70,11 @@
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\视频网站鼠标移动盒子遮罩案例" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\css初始化" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\浮动\清除浮动" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\小米官网产品介绍\pic" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\各个公司的面试问题总结" />
-      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\webSocket" />
     </key>
   </component>
   <component name="RunManager">
@@ -130,7 +136,7 @@
       <workItem from="1592264989897" duration="7606000" />
       <workItem from="1592616594923" duration="17080000" />
       <workItem from="1592997979458" duration="34243000" />
-      <workItem from="1593757059099" duration="69277000" />
+      <workItem from="1593757059099" duration="90827000" />
     </task>
     <servers />
   </component>
@@ -142,6 +148,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586316844539" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1594607523576">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594607523576" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594354401935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

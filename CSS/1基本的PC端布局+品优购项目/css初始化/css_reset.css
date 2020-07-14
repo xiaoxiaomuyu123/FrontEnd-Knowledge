@@ -1,0 +1,73 @@
+/* 把所有标签的内外边距都设置成 0  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去掉 li 的小圆点 */
+li {
+    list-style: none;
+}
+
+img {
+    /* 为了照顾低版本浏览器，在低版本浏览器如果图片有链接，会默认有一个边框 */
+    border: 0;
+    /* 去掉图片下面的空白缝隙 */
+    vertical-align: middle;
+}
+
+/* 按钮的鼠标样式改为小手 */
+button {
+    cursor: pointer;
+}
+
+/* a 连接无下划线，并更改颜色 */
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* 鼠标经过链接要变色 */
+a:hover {
+    color: #c81623;
+}
+
+/*
+    统一按钮和 input 里面的字体
+    "\5B8B\4F53" 意思是宋体，如果直接写汉字，浏览器在解释 css 的代码的时候可能会出现乱码的问题，
+    所以就把中文字体的名称用相应的 Unicode 编码来代替。
+*/
+
+button,
+input {
+    font-family: "Microsoft YaHei UI", "\5B8B\4F53";
+}
+
+/* body 默认的字体、颜色 */
+body {
+    /* 这是 CSS3 的属性，文字放大有可能会有锯齿，设置这个属性，就不会有锯齿，让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 "Microsoft YaHei UI";
+    color: #666;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    dispaly: block;
+    content: '.';
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+

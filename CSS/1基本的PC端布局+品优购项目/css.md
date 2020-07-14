@@ -939,19 +939,281 @@ p 标签不自动换行的原因
             }
    ```    
    
+## 13、CSS 初始化    
+
+不同浏览器对标签的默认样式不一样，为了兼容性更好，需要对 css 标签进行初始化，也成为 css reset。每个网页都必须首先进行初始化。       
+
+```
+/* 把所有标签的内外边距都设置成 0  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去掉 li 的小圆点 */
+li {
+    list-style: none;
+}
+
+img {
+    /* 为了照顾低版本浏览器，在低版本浏览器如果图片有链接，会默认有一个边框 */
+    border: 0;
+    /* 去掉图片下面的空白缝隙 */
+    vertical-align: middle;
+}
+
+/* 按钮的鼠标样式改为小手 */
+button {
+    cursor: pointer;
+}
+
+/* a 连接无下划线，并更改颜色 */
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* 鼠标经过链接要变色 */
+a:hover {
+    color: #c81623;
+}
+
+/*
+    统一按钮和 input 里面的字体
+    "\5B8B\4F53" 意思是宋体，如果直接写汉字，浏览器在解释 css 的代码的时候可能会出现乱码的问题，
+    所以就把中文字体的名称用相应的 Unicode 编码来代替。
+*/
+
+button,
+input {
+    font-family: "Microsoft YaHei UI", "\5B8B\4F53";
+}
+
+/* body 默认的字体、颜色 */
+body {
+    /* 这是 CSS3 的属性，文字放大有可能会有锯齿，设置这个属性，就不会有锯齿，让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 "Microsoft YaHei UI";
+    color: #666;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    dispaly: block;
+    content: '.';
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+```
+
+## 14 HTML5  
+
+html5 新标签和新的特性有兼容性问题，需要 IE9 及以上的浏览器才能用。html5 新增的标签更适合移动端。
+
+### 14.1 HTML5 新增的语义化的标签    
+
+以前的 div+css 布局，对搜索引擎不友好。新增的语义化标签有。要注意，在 IE9 中，这些新增的标签不是块元素，需要转换成块元素  
+  
+- `<header>` 头部标签   
+- `<nav>` 导航标签  
+- `<article>` 内容标签   
+- `<section>` 定义文档某个区域   
+- `<aside>` 侧边栏标签   
+- `<footer>` 尾部标签
+      
+
+### 14.2 html5 子女证的多媒体标签  
+  
+- `video` 视频标签 MP4 的兼容性最好，几乎所有浏览器都支持
+- `audio` 音频标签 MP3 的兼容性最好，几乎所有浏览器都支持   
+这样就可以不再使用 flash 或者其他浏览器的插件     
    
+`<video src="" controls="controls"></video>`
 
+### 14.3 html5 input 标签新增了很多类型      
+   
+![](./css_pic/input.png)   
 
+使用的时候必须添加 form 表单域     
 
+```
+<form action="">
+    <ul>
+        <li>
+            <input type="email">
+        </li>
+        <li>
+            <input type="url">
+        </li>
+        <li>
+            <input type="number">
+        </li>
+    </ul>
+</form>
+```   
 
+### 14.5 新增的表单属性    
 
+![](./css_pic/form.png)   
 
+- placeholder 里面的文字如何修改颜色和样式     
 
+```
+ input::placeholder {
+      font-size: 12px;
+      color: gray;
+ }
+```   
 
+## 15、CSS3 新特性    
 
+- IE9 及以上支持    
+- 移动端支持的比 PC 端好
+  
+### 15.1 新增选择器  
 
+- 属性选择器   
+- 结构伪类选择器
+- 伪元素选择器  
 
+#### 15.1.1 属性选择器
 
+![](./css_pic/attr.png)
 
+类选择器，属性选择器，伪类选择器 他们的属性都是 0010
 
+#### 15.1.2 结构伪类选择器    
+    
+主要根据文档结构来选择元素，常用于根据父级选择器选择里面的子元素
 
+![](./css_pic/fake.png)   
+ 
+- E:nth-child(n)   
+  括号里面的 n 可以是数字、关键字、公式。
+  
+    - 数字，是几就选第几个子元素     
+    - 关键字 even（偶数） odd（奇数） 制作表格的隔行变色的效果        
+        ![](./css_pic/table.png)     
+        
+    - 公式，常见的公式如下（如果 n 是公式，则从 0 开始计算，但是第 0 个元素或者超出了元素的个数会被忽略）    
+    
+        - E:nth-child(n)  从 0 开始，每次加 1，相当于选择了所有的孩子    
+        - 其他公式    
+        
+          ![](./css_pic/gong.png)    
+          
+- E:nth-of-type(n)             
+
+  用法和 E:nth-child(n) 是一样的，场景上有区别  
+       
+    - E:nth-child(n)    
+      会把所有的子元素都排上序号   
+      
+      ```
+      section div:nth-child(1) {
+          background-color: pink;
+      }
+      
+      
+      <section>
+          <p>第一</p>
+          <div>第二</div>
+          <div>第三</div>
+      </section>
+      ```
+         
+      这样是选不出 section 里面的元素的。原因是，`section div:nth-child(1)` 首先把 section 里面的所有子元素进行排序标号，接着找到第一个子元素，最后再去匹配 div 。但是根据 html 的结构，section 的第一个子元素是 p，不是 div，因此匹配不到正确的元素。
+        
+    - E:nth-of-type(n) 
+     
+        ```
+        section div:nth-of-type(1) {
+            background-color: pink;
+        }
+        
+        
+        <section>
+            <p>第一</p>
+            <div>第二</div>
+            <div>第三</div>
+        </section>
+        ```
+    这样就会把 ”第二“ 这个元素选出来。执行的过程和 `section div:nth-child(1)` 不一样，`section div:nth-of-type(1)` 先找到 section 里面所有的 div 子元素，然后再进行排序标号。
+
+#### 15.1.3 伪元素选择器 （重点）    
+  
+伪元素选择器可以通过 CSS 来创建一个新的标签，取代 html 创建标签，好处是可以简化 html 的结构。       
+    
+应用场景在下图，红色框内右侧的小箭头，不用新增 html 的标签实现，可以用伪元素来实现。这样使得 html 的结构更简单。
+
+![](./css_pic/weiyuansu.png)
+   
+   
+伪元素选择符：   
+
+- `::before`  在元素内部的前面插入内容  
+- `::after`  在元素内部的后面插入内容     
+
+注意：   
+
+- before 和 after 创建的元素，属于行内元素   
+- 新创建的这个元素在文档树中是找不到的，所以才称为伪元素   
+- 语法：`element::before{}`   
+- before 和 after 必须有 content 属性    
+- before 在父元素内容的前面创建元素，after 在父元素内容的后面插入元素    
+- 伪元素选择器和标签选择器的权重一样，是 1      
+
+伪元素应用场景：     
+
+- 伪元素字体图标      
+
+- 鼠标经过视频，出现黑色半透明遮罩层的效果
+   
+- 清除浮动       
+
+  ![](./css_pic/clearfix.png)    
+
+### 15.2 CSS3 盒模型     
+    
+css3 以前，在设置好盒子的 width 和 height 以后，如果加上 border 会撑大盒子，加上 padding 也会撑大盒子，现在为了简化计算最终盒子的大小，css3 通过 `box-size` 属性来指定盒模型
+
+- `box-size: content-box;` 这是默认值，盒子的大小 = content + padding + border   
+- `box-size: border-box` 盒子大小就是 width，再设置 padding 和 border 的时候，也不会撑开盒子，改变盒子的大小
+
+### 15.3 CSS3 其他特性    
+
+- 如何让图片变模糊 filter    
+
+  使元素模糊，或者颜色发生偏移    
+  `filter：函数 （）； 例如： filter：blur（5px）；`  blur 函数起模糊的作用，数值越大，越模糊
+
+- 计算盒子宽度 width:calc 函数
+  
+  `width: calc(100%-80px);`     
+  
+  
+- css3 过渡动画特性  transition    
+
+  经常和 `：hover` 一起搭配使用
+  
+  `transition：要过度的属性 花费时间 运动曲线 何时开始`  
+   
+   - 属性：想要变化的 css 属性，宽度高度 背景颜色 内外边距  。如果想要所有的属性都有变化过度，写一个 all 就可以
+   - 花费的时间：单位是秒  
+   - 运动曲线：默认是 ease (可以省略)
+   - 何时开始：单位是秒，可以设置延迟出发的时间，默认是 0s （可以省略）
+  

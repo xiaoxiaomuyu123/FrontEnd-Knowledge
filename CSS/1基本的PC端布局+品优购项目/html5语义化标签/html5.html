@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border-radius: 1em;
+        }
+        header {
+            width: 800px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        nav {
+            width: 800px;
+            height: 50px;
+            margin: 10px auto;
+            background-color: pink;
+        }
+        .box {
+            width: 800px;
+            margin: 10px auto;
+        }
+        .box article {
+            width: 395px;
+            height: 250px;
+            background-color: palevioletred;
+        }
+        .box .box1 {
+            float: left;
+        }
+        .box .box2 {
+            float: right;
+        }
+        .clearfix:after {
+            visibility: hidden;
+            clear: both;
+            dispaly: block;
+            content: '.';
+            height: 0;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .box .box1 section {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            margin: 10px auto;
+            margin-top: 120px;
+        }
+        footer {
+            /*clear: both;*/
+            width: 800px;
+            height: 50px;
+            margin: 0 auto;
+            /*margin-top: 20px;*/
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <div class="clearfix box">
+        <article class="box1">
+            <section></section>
+        </article>
+        <article class="box2"></article>
+    </div>
+    <footer class="clearfix"></footer>
+</body>
+</html>
