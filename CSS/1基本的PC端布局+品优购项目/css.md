@@ -691,13 +691,25 @@ display 用预设值一个元素该如何显示
     
       ```
           @font-face {
-             font-family: 'icomoon';
-             src: url('');
-             src: url(''),
-                  url('')
-             font-weight: normal;
-             font-style: normal;
-          }
+                      font-family: 'icomoon';
+                      src: url('fonts/icomoon.eot?7kkyc2');
+                      src: url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+                          url('fonts/icomoon.ttf?7kkyc2') format('truetype'),
+                          url('fonts/icomoon.woff?7kkyc2') format('woff'),
+                          url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+                      font-weight: normal;
+                      font-style: normal;
+                      font-display: block;
+                  }
+      
+      
+      .shortcut .box .box2 ul li:nth-child(2)::after,
+      .shortcut .box .box2 ul li:nth-child(n+5)::after {
+                  font-family: 'icomoon';
+                  /* 字体图标编码的前面必须有一个反斜杠 */
+                  content: "\ea50";
+                  
+              }
       ```
     - span 标签把字体图标的代符号加上
     - 给这个 span 标签声明字体   
@@ -1208,12 +1220,84 @@ css3 以前，在设置好盒子的 width 和 height 以后，如果加上 borde
   
 - css3 过渡动画特性  transition    
 
-  经常和 `：hover` 一起搭配使用
-  
-  `transition：要过度的属性 花费时间 运动曲线 何时开始`  
+    - 使用方法
+        经常和 `：hover` 一起搭配使用
+        
+        `transition：要过度的属性 花费时间 运动曲线 何时开始`  
    
-   - 属性：想要变化的 css 属性，宽度高度 背景颜色 内外边距  。如果想要所有的属性都有变化过度，写一个 all 就可以
-   - 花费的时间：单位是秒  
-   - 运动曲线：默认是 ease (可以省略)
-   - 何时开始：单位是秒，可以设置延迟出发的时间，默认是 0s （可以省略）
+        - 属性：想要变化的 css 属性，宽度高度 背景颜色 内外边距  。如果想要所有的属性都有变化过度，写一个 all 就可以
+        - 花费的时间：单位是秒  
+        - 运动曲线：默认是 ease (可以省略)
+        - 何时开始：单位是秒，可以设置延迟出发的时间，默认是 0s （可以省略）
   
+          ```
+          div {
+              width: 200px;
+              height: 100px;
+              background-color: pink;
+              transition: width 1s;
+          }
+          div:hover {
+              width: 300px;
+          }
+          ```   
+          要注意 transition 写的位置，那个元素需要变化，就写那个元素，然后结合 `:hover` 来实现鼠标经过，触发动画过渡的效果。如果想要多个属性进行过渡动画，用逗号隔开，例如：`transition: width 1s, height 1s;`        
+  
+    - transition 应用案例——进度条（购物网站秒杀进度条）
+      
+      ![](./css_pic/miaosha.png)
+     
+    思路分析：实际上是由父盒子和子盒子构成，随着你秒杀数量的增多，父盒子不变，子盒子逐渐变大。   
+    
+## 16、品优购项目练习     
+
+### 16.1 网站制作流程       
+
+![](./css_pic/liucheng.png)
+       
+### 16.2 favicon 图标    
+
+![](css_pic/favicon.png)    
+
+favicon 图标就是打开网页时，网页标签栏最前面的图标     
+
+- 制作 favicon 图标  
+
+    - 把图标用 ps 切成 png 图片
+    - 把 png 图片转换成 ico 图标，这需要第三方转换网站，比如 比特虫：http://www.bitbug.net
+    
+- 将做好的 favicon 图标放在网站的根目录下   
+    
+- html 引入 favicon 图标
+    
+    在 head 标签里面引入： `<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>`
+          
+### 16.3 网站 TDK 三大标签 SEO 优化     
+
+SEO 的目的是对网站做深度的优化，从而帮助网站获取免费的流量，进而在搜索引擎上提高搜索排名。    
+
+![](css_pic/tdk.png)
+
+- title 网站标题    
+  title 具有不可替代性，是网页第一个重要的标签，是搜索引擎了解网页的入口和对网页主题归属的最佳判断点。网站名-网站介绍，不要超过30字   
+  
+- description 网站说明    
+  主要说明网站是做什么的      
+  
+- keywords 关键字    
+  keywords 是页面关键词，是搜索引擎的关注点之一    
+  
+ ![](css_pic/key.png)    
+ 
+### 16.4 盒子之间小竖线的做法   
+
+![](css_pic/li.png)
+  
+小竖线用li元素这个盒子来做，设置 li 的宽高margin值   
+
+# 该看308集      
+
+
+## 17、css3 2D转换
+  
+

@@ -1,0 +1,61 @@
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 红色字体 */
+.style_red {
+    color: #c81623;
+}
+
+/******************** 快捷导航 shortcut 模块 *****************/
+.shortcut {
+    height: 25px;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    line-height: 25px;
+}
+.box1 {
+    float: left;
+}
+.box1::before {
+    content: "品优购欢迎您";
+    /*color: gray;*/
+}
+.shortcut .box .box2{
+    float: right;
+}
+.shortcut .box .box2 li {
+    float: left;
+    /*padding: 0 5px;*/
+}
+.shortcut .box .box2 li:nth-child(2n) {
+    width: 1px;
+    height: 10px;
+    margin: 7px 10px;
+    background-color: #4e4e4e;
+}
+/*  伪元素实现 icon  */
+
+/* 字体声明  引入字体图标  */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./fonts/icomoon.eot?fnkeja');
+    src:  url('./fonts/icomoon.eot?fnkeja#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?fnkeja') format('truetype'),
+    url('./fonts/icomoon.woff?fnkeja') format('woff'),
+    url('./fonts/icomoon.svg?fnkeja#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.shortcut .box .box2 ul li:nth-child(3)::after,
+.shortcut .box .box2 ul li:nth-child(9)::after,
+.shortcut .box .box2 ul li:nth-child(11)::after,
+.shortcut .box .box2 ul li:nth-child(13)::after {
+    content: "\ea50";
+    font-family: 'icomoon';
+    /*font-size: 14px;*/
+}

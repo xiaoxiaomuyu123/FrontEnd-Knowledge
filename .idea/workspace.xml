@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css初始化/css_reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/html5语义化标签/html5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/nth-child.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/placeholder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/伪元素选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/品优购项目/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/品优购项目/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/品优购项目/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/购物网站秒杀进度条.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/transition.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/transition.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/视频网站鼠标移动盒子遮罩案例/pic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/品优购项目/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\品优购项目\css" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\视频网站鼠标移动盒子遮罩案例\pic" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\视频网站鼠标移动盒子遮罩案例" />
     </key>
@@ -136,7 +135,7 @@
       <workItem from="1592264989897" duration="7606000" />
       <workItem from="1592616594923" duration="17080000" />
       <workItem from="1592997979458" duration="34243000" />
-      <workItem from="1593757059099" duration="90827000" />
+      <workItem from="1593757059099" duration="109478000" />
     </task>
     <servers />
   </component>
