@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>页码放大</title>
+    <style>
+        div ul li {
+            float:left;
+            height: 50px;
+            width: 50px;
+            border: 1px solid gray;
+            margin: 0 30px;
+            list-style: none;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+
+        div ul li:hover {
+            transform: scale(1.5);
+        }
+
+    </style>
+
 </head>
 <body>
-$END$
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
 </body>
 </html>
