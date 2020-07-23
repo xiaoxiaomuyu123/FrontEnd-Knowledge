@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/prop-types.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+    // 定义组件
+    class MyInput extends React.Component {
+        constructor(props) {
+            super(props);
+            this.Input = this.Input.bind(this);
+            this.blur = this.blur.bind(this);
+        }
+
+        Input (event) {
+            let input = this.refs.content;
+            // alert(input.value);
+            alert(this.input.value);
+            console.log("btn event", event);
+            console.log('btn event.target', event.target);
+        }
+
+        blur (event) {
+            console.log("event", event);
+            console.log("event.target", event.target);
+            alert(event.target.value);
+        }
+
+        render() {
+            return (
+                <div>
+                    <input type="text" ref="content"/>
+                    <input type="text" ref={input => this.input = input}/>
+                    <button onClick={this.Input}>提示输入</button>
+                    <input type="text" placeholder="失去焦点时提示" onBlur={this.blur}
+                        ref={input => this.input = input}/>
+                </div>
+            )
+        }
+    }
+
+
+    // 渲染组件
+    ReactDOM.render(
+        <MyInput />,
+        document.getElementById('test')
+    )
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/prop-types.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+    // 定义组件
+    class Person extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <ul>
+                    <li>name: {this.props.name}</li>
+                    <li>age: {this.props.age}</li>
+                    <li>gender: {this.props.gender}</li>
+                </ul>
+            )
+        }
+    }
+
+    Person.propTypes = {
+        name: PropTypes.string.isRequired,
+        age: PropTypes.number
+    }
+
+    Person.defaultProps = {
+        age: 12,
+        gender: 'male'
+    }
+
+    const p3 = {
+        name: 'Jane',
+        age: 18
+    }
+
+    // 渲染组件
+    ReactDOM.render(
+        <Person {...p3}/>,
+        document.getElementById('test')
+    )
+</script>
+</body>
+</html>

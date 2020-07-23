@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/prop-types.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+
+
+    /*
+    *  需求：
+    *  name 必须有，性别默认 male，年龄默认18
+    * */
+
+    // 定义组件，因为组件内部没有状态，所以可以使用工厂函数组件
+    function Person(props) {
+        return (
+            <ul>
+                <li>name: {props.name}</li>
+                <li>age: {props.age}</li>
+                <li>gender: {props.gender}</li>
+            </ul>
+        )
+    }
+
+
+
+    Person.defaultProps = {
+        age: 18,
+        gender: 'male'
+    }
+
+    // 约束传入 Person 组件的参数格式
+    Person.propTypes = {
+        name: PropTypes.string.isRequired,
+        age: PropTypes.number
+    }
+
+    const p1 = {
+        name: 'TOM',
+        age: 13,
+        gender: 'male'
+    }
+
+    // 渲染组件
+    ReactDOM.render(<Person name={p1.name} age={p1.age} gender={p1.gender}/>, document.getElementById('test'))
+
+    const p2 = {
+        name: 'Jack2'
+    };
+    // ReactDOM.render(<Person name={p2.name} age={p2.age} gender={p2.gender}/>, document.getElementById('test'))
+    // 上面这句代码的参数传递，有一个简便的写法，就是扩展运算符 ...
+    ReactDOM.render(<Person {...p2}/>, document.getElementById('test'))
+
+    /*
+    ... 的作用
+    1、打包
+    function fn(...a) {}  fn(1, 2, 3)
+    2、解包
+    const arr1 = [1, 2, 3,];
+    consr arr2 = [a, ...arr2, 0]
+     */
+
+</script>
+</body>
+</html>

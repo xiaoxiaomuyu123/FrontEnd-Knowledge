@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ilikeyou</title>
+</head>
+<body>
+<div id="test"></div>
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+    // 类组件
+
+    class Like extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isLikeMe: false
+            }
+
+        // 将新增的方法强制绑定为组件内部的方法
+        this.handleClick = this.handleClick.bind(this)
+        }
+
+        // 这是组件新增加的方法，新增加的方法中的 this 不指向这个组件，指向的是 undefined
+        // 需要在 constructor(props) 函数中将 this 绑定
+        handleClick () {
+            console.log(this)
+            let isLikeMe = !this.state.isLikeMe;
+            this.setState({isLikeMe})
+        }
+
+        // render 是组件内部的方法，this 就指向这个组件
+        render() {
+            const {isLikeMe} = this.state;
+            return <h2 onClick={this.handleClick}>{isLikeMe ? '我喜欢你':'你喜欢我'}</h2>
+        }
+    }
+
+    // 渲染组件
+    ReactDOM.render(<Like />, document.getElementById('test'))
+</script>
+</body>
+</html>

@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JS/react/react学习笔记.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/用旋转制作三角图标.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/用旋转制作三角图标.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/鼠标经过时页码放大.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/练习案例/鼠标经过时页码放大.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/flex/align-content.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/flex/05align-content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/flex/align-items.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/flex/04align-items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/flex/align-self.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/flex/08align-self.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/flex/flex-direction.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/flex/01flex-direction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/flex/flex-wrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/flex/03flex-wrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/flex/flex.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/flex/07flex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/flex/justify-content.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/flex/02justify-content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/react.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/react.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/react学习笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/react学习笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +46,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/去哪儿/QFC前端自学内容&amp;作业/前端作业/作业一/作业3.1业务系统移动前端开发参考图" />
+    <property name="last_opened_file_path" value="E:/frontEnd/learningreact/prime/04_2props_class.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -141,26 +131,50 @@
       <workItem from="1592264989897" duration="7606000" />
       <workItem from="1592616594923" duration="17080000" />
       <workItem from="1592997979458" duration="34243000" />
-      <workItem from="1593757059099" duration="128759000" />
+      <workItem from="1593757059099" duration="134007000" />
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1594909972948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594909972948</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586316844539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586316844539" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1594909474038">
+    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1594909967322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594909474038" />
+    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594909967322" />
+    <state x="129" y="54" key="DiffContextDialog" timestamp="1594909880183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1594909880183" />
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1594983797414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594983797414" />
     <state x="186" y="0" key="SettingsEditor" timestamp="1594607523576">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594607523576" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1594910053447">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594910053447" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594354401935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父子组件的通信todolist</title>
+</head>
+<body>
+<div id="test"></div>
+
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/prop-types.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+    /*
+    组件通信：
+    1. 父组件的数据传递给子组件，通过 props 参数 传递
+    2. 子组件如何改变父组件的state状态呢？
+       要改变哪个组件的 state 状态，那么改变这个 state 状态的函数就定义在哪个组件
+       可以在父组件中定义函数，然后以 props 参数的形式传递个子组件，子组件再调用
+    */
+
+    //定义组件
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                todos: ['eat', 'sleep', 'homework']
+            };
+
+            this.addTodo = this.addTodo.bind(this);
+        }
+
+        addTodo (todo) {
+            const {todos} = this.state;
+            todos.unshift(todo);
+            this.setState({todos});
+        }
+
+        render () {
+            const {todos} = this.state;
+            return (
+                <div>
+                    <h1>simple todo list</h1>
+                    <Add todos={todos} addTodo={this.addTodo}/>
+                    <List todos={todos}/>
+                </div>
+            )
+        }
+    }
+
+    class Add extends React.Component {
+        constructor(props) {
+            super(props);
+            this.add = this.add.bind(this);
+        }
+
+        add () {
+            let inputTodo = this.input.value;
+            this.props.addTodo(inputTodo);
+            this.input.value = '';
+        }
+
+        render() {
+            const {todos} = this.props;
+            return (
+                <div>
+                    <input type="text" placeholder="请输入待办事项" ref={input => this.input = input} />
+                    <button onClick={this.add}>添加 #{todos.length}</button>
+                </div>
+            )
+        }
+    }
+
+    class List extends React.Component {
+
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            const {todos} = this.props;
+            return (
+                <div>
+                    <ul>
+                        {
+                          todos.map((todo, index) => <li key={index}>{todo}</li>)
+                        }
+                    </ul>
+                </div>
+            )
+        }
+    }
+
+    List.propTypes = {
+        todos: PropTypes.array.isRequired
+    };
+    Add.propTypes = {
+        addTodo: PropTypes.func.isRequired
+    }
+
+    // 渲染组件
+    ReactDOM.render(<App />, document.querySelector('#test'))
+</script>
+</body>
+</html>

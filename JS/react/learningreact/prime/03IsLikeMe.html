@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IsLikeMe</title>
+</head>
+<body>
+<div id="test"></div>
+
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+    // 定义组件
+    class Like extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isLikeMe: false
+            }
+
+            this.handleClick = this.handleClick.bind(this);
+        }
+
+        handleClick () {
+            const isLikeMe = !this.state.isLikeMe;
+            this.setState({isLikeMe});
+        }
+
+
+
+        render() {
+            const {isLikeMe} = this.state;
+            return <h2 onClick={this.handleClick}>{isLikeMe ? 'I Like You' : 'You Like Me'}</h2>
+        }
+    }
+
+    //  渲染组件
+    ReactDOM.render(<Like />, document.getElementById('test'))
+</script>
+</body>
+</html>

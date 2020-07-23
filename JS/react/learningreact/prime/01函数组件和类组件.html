@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数组件和类组件</title>
+</head>
+<body>
+<div id="test"></div>
+
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+    // 类组件
+    class MyComponent extends React.Component {
+
+        render() {
+
+            return <h2>ES6组件类</h2>
+        }
+    }
+
+    ReactDOM.render(<MyComponent />, document.getElementById('test'))
+</script>
+</body>
+</html>

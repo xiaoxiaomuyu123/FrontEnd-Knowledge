@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收集表单数据</title>
+</head>
+<body>
+<div id="test"></div>
+
+<script type="text/javascript" src="../files/react.development.js"></script>
+<script type="text/javascript" src="../files/react-dom.development.js"></script>
+<script type="text/javascript" src="../files/prop-types.js"></script>
+<script type="text/javascript" src="../files/babel.min.js"></script>
+
+<script type="text/babel">
+    /*
+    表单注意的问题：
+    0. 表单部分要用 form 标签包起来，不要用 div 标签了
+    1. input 标签有很多 type 属性，注意要使用上。用户名就是 type=“text”，密码的 type=“password”
+    2. 表单提交按钮不要用普通的 button 标签来做，要用 input 标签，设置 type=“submit” value=“登录”
+    3. 表单提交事件的触发在react里是 onSubmit，要写在form标签里面
+    4. react 的 onChange 事件在输入的过程中，一边输入一边触发，而在原生 DOM 里面，onChange 事件是在市区焦点时触发
+    5. 现在的需求是，在输入密码的时候，用户输入的密码要随时保存在组件中的 state 里面，所以需要用到 onChange 事件
+       - 此时实现的是受控组件，表单可以把信息自动的传输到 state 里面，需要数据的时候直接从 state 里面取，如果表单的内容
+         出现了修改，组件的 state 状态会自动跟着变化
+       - 非受控组件，需要的时候，直接手动从 DOM 里面读取数据 ，不经过组件里面的 state 状态。
+         非受控组件不利于数据的整体统一管理，所以尽量采用受控组件进行开发
+       - 本案例中，用户名是非受控的，密码是受控的
+    */
+
+
+    // 定义组件
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.handleSubmit = this.handleSubmit.bind(this);
+            this.handleonChange = this.handleonChange.bind(this);
+        }
+
+        handleSubmit (event) {
+            let username = this.username.value;
+            // let password = this.password.value;
+            let password = this.state.pwd;
+            // console.log(username, password);
+            alert(`用户名是${username}，密码是${password}`);
+
+            // 阻止事件的默认行为，这个event 的默认行为是提交，也就是先不让表单提交
+            event.preventDefault();
+        }
+
+        handleonChange (event) {
+            /*
+            什么时候用 this，什么时候用 event.target 呢?
+            一般情况下 ，this 通用，但是当触发的事件和操作的事件一样的时候，就可以用 event
+            */
+            let pwd = event.target.value;
+            this.setState({pwd});
+        }
+
+        render () {
+            return (
+                <form onSubmit={this.handleSubmit}>
+                    用户名： <input type="text" ref={input => this.username = input}/>
+                    密码： <input type="password" ref={input => this.password = input}
+                               onChange={this.handleonChange}/>
+                    <input type="submit" value="登录"/>
+                </form>
+            )
+        }
+    }
+
+    //渲染组件
+    ReactDOM.render(<App />, document.querySelector('#test'))
+</script>
+</body>
+</html>
