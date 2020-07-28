@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>生命周期</title>
+    <title>Title</title>
 </head>
 <body>
 <div id="test"></div>
@@ -18,39 +18,29 @@
         constructor(props) {
             super(props);
             this.state = {
-                opacity: 1
-            }
-            this.distroyComponent = this.distroyComponent.bind(this)
+                opacity: 0.4
+            };
+            this.destroyComponent = this.destroyComponent.bind(this);
         }
 
-        distroyComponent () {
+        destroyComponent () {
             ReactDOM.unmountComponentAtNode(document.querySelector('#test'))
         }
 
         componentDidMount () {
-            // 注意 setInterval 要绑定 this，才能使用
             this.intervalId = setInterval(function() {
-                console.log("d");
+                console.log('get in setInterval');
                 let {opacity} = this.state;
                 opacity = opacity - 0.1;
-                // 在js 中，减去小数，不精确，所以条件不能设置成 opacity === 0
                 if(opacity <= 0) {
                     opacity = 1;
                 }
-                // this.setState 是一个函数，直接调用，他不是一个变量不能赋值
-                this.setState({opacity})
+                this.setState ({opacity});
             }.bind(this), 100)
         }
 
-        /*
-        需求：要在 componentWillUnmount 里面清除定时器
-        这就需要在 componentWillUnmount 上看到 componentDidMount 里面的定时器，需要做两步：
-        1. 要在 componentDidMount 里面将定时器返回的id值用一个 intervalId 变量接收
-        2. 要想让这两个函数都访问到这个 intervalId 变量，就需要把这个变量使用 this 绑定在这个组件中
-         */
-
-        componentWillUnmount() {
-            clearInterval(this.intervalId)
+        componentWillUnmount () {
+            clearInterval(this.intervalId);
         }
 
         render () {
@@ -58,13 +48,14 @@
             return (
                 <div>
                     <h1 style={{opacity: opacity}}>react 太难了</h1>
-                    <button onClick={this.distroyComponent}>不活了</button>
+                    <button onClick={this.destroyComponent}>不活了</button>
                 </div>
             )
         }
     }
 
     ReactDOM.render(<Life />, document.querySelector('#test'))
+
 </script>
 </body>
 </html>
