@@ -2,17 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/react/react学习笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/react学习笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/babel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/babel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/prop-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/prop-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/react-dom.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/react-dom.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/react.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/react.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/redux-master.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/redux-master.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/static page/comment_page/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/static page/comment_page/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/static page/comment_page/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/static page/comment_page/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/static page/comment_page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/static page/comment_page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/static page/users_page/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/static page/users_page/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/static page/users_page/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/static page/users_page/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/files/static page/users_page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/files/static page/users_page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/00test.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/00test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/01函数组件和类组件.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/01函数组件和类组件.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/02列表渲染.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/02列表渲染.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/03IsLikeMe.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/03IsLikeMe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/03ilikeyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/03ilikeyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/04_1props_function.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/04_1props_function.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/04_2props_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/04_2props_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/05refs.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/05refs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/06composing.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/06composing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/07-01gooverform.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/07-01gooverform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/07form.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/07form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/prime/08lifecycle.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/prime-react/08lifecycle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/components/add-and-sub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/components/add-and-sub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/components/show.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/components/show.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/redux/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/redux/action-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/redux/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/redux/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/learningreact/react-app/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app-demo/react-app-with-redux/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/react/react.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/react.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="FrontEnd-Konwledge" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +69,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -39,14 +89,15 @@
   <component name="ProjectId" id="1X0MyLHJj4riP20INx5Z2M5ROrV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/frontEnd/learningreact/prime/04_2props_class.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -56,7 +107,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -65,11 +116,11 @@
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\视频网站鼠标移动盒子遮罩案例" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/linux" />
+      <recent name="$PROJECT_DIR$/JS/react/studyCaseOfReact/create-react-app" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\JS\react" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\css初始化" />
       <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\浮动\清除浮动" />
-      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例\小米官网产品介绍\pic" />
-      <recent name="E:\frontEndOfGit\FrontEnd-Konwledge\CSS\1基本的PC端布局+品优购项目\练习案例" />
     </key>
   </component>
   <component name="RunManager">
@@ -81,18 +132,6 @@
         <item itemvalue="Node.js.lll.js" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -132,6 +171,9 @@
       <workItem from="1592616594923" duration="17080000" />
       <workItem from="1592997979458" duration="34243000" />
       <workItem from="1593757059099" duration="134007000" />
+      <workItem from="1596173838076" duration="774000" />
+      <workItem from="1596175529534" duration="2415000" />
+      <workItem from="1596183494104" duration="1534000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1594909972948</created>
@@ -144,17 +186,13 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
     <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586316844539">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="415" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586316844539" />
     <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1594909967322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -167,10 +205,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594983797414" />
-    <state x="186" y="0" key="SettingsEditor" timestamp="1594607523576">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="349" y="23" key="SettingsEditor" timestamp="1596174435934">
+      <screen x="0" y="23" width="2560" height="1329" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594607523576" />
+    <state x="349" y="23" key="SettingsEditor/0.23.2560.1329@0.23.2560.1329" timestamp="1596174435934" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1594910053447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
