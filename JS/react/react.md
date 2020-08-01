@@ -74,7 +74,7 @@
 
 
 
-## 1. 说一下 React
+## 1. React
 
 React 通过引入虚拟 DOM，单向数据流，状态等设计理念，形成以组件为核心，用组件来搭建页面的开发模式，将服务器端的动态数据，用户在页面的交互和 UI 映射到一起。
 React 具有以下特点：
@@ -90,7 +90,11 @@ React 具有以下特点：
 
 
 
+<<<<<<< HEAD
 ## 3. 说一下什么是 virtual dom     
+=======
+## 3. 什么是virtual dom     
+>>>>>>> refs/remotes/origin/master
 
 虚拟 DOM 是普通的 JavaScript 对象，访问 JavaScript 对象当然比访问真实 DOM 要快得多。
 用 JavaScript 对象结构表示 DOM 树的结构；然后用这个虚拟 DOM 树构建一个真正的 DOM 树，插到文档当中。 当状态变更的时候，重新构造一棵新的虚拟 DOM 树。然后用新的树和旧的树进行比较，记录两棵树差异 把所记录的差异应用到所构建的真正的 DOM 树上，视图就更新了。Virtual DOM 本质上就是在 JS 和 DOM 之间做了一个缓存。
