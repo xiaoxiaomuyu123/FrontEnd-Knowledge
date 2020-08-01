@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3bc3c39-2d54-4d06-b983-0120ea6c4edd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/1基本的PC端布局+品优购项目/css.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/react/react学习笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS/react/react学习笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/frontEnd/learningreact/prime/04_2props_class.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -132,6 +131,7 @@
       <workItem from="1592616594923" duration="17080000" />
       <workItem from="1592997979458" duration="34243000" />
       <workItem from="1593757059099" duration="134007000" />
+      <workItem from="1596273750985" duration="822000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1594909972948</created>
