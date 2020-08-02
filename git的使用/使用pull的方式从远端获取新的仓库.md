@@ -23,6 +23,8 @@
 
 - 执行 `git remote add origin 远端仓库地址`
 
+注意，如果不小心把 `git remote add origin 远端仓库地址` 中的 `远端仓库地址` 输入成了 `远端仓库名`，可以执行 `git remote rm origin` 将错误的连接移除
+
 - 查看添加的远端仓库的地址： 执行 `git remote -v`    
 
 #### 2.3 从远端拉取其他分支到本地仓库     
