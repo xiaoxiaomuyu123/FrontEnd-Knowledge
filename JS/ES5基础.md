@@ -29,39 +29,39 @@ if(car !== null) {
    因为 0.1 + 0.2 可能等于 0.30000000000000003     
    - 数值转换，把非数值转换成数值的函数 Number（str），parseInt（str），parseFloat（str）  
                                           
-                                             - Number(str)函数  转换规则（一元加和 Number（str）函数的转换方法一样）：   
-                                             1. true 变成 1，false 变成 0；undefined 变成 NaN， null 变成 0；
-                                             2. 字符串转换成数字的规则：  
-                                                   1. 只包含数字，就直接转换成数字
-                                                   2. 空字符串转成 0，parseInt 空字符串转换成 NaN
-                                                   3. ‘123abc’ 转换成 NaN
-                                                   4. 其他形式"bule"转换成 NaN  
-                                                   5. 如果是对象，调用 obj.valueOf（）方法，返回的结果不能转换成数字，就调用 obj.toString（）方法。
-                                             - parseInt(str)  忽略字符串前面的空格，直到找到第一个非空格字符，如果第一个字符不是数字字符或者是负号，就返回 NaN；如果是数字，就转换到第一个非数字字符为止。  
-                                             ‘123abs’ 转换成 123，‘1.2’ 转换成 1，‘abs’ 转换成 NaN，空字符串转换成 NaN。空字符串和 Number 不一样，Number 转换成 0。  
-                                             此外，注意 parseInt（str, base）还提供了第二个参数，用来标识第一个参数的是几进制。
-                                             - parseFloat()    
-                                             
-                                            乘性操作符的操作数是非数字的时候，会将操作符先使用 Number() 函数转换成数字，再进行计算
-                                            
-                                       转换函数|true|false|undefined|null|""|"123abc"|"1.1"|"12a.3"
-                                       :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-                                       Number() 一元加、乘性操作符|1|0|NaN|0|0|NaN|1.1|NaN
-                                       parseInt()|NaN|NaN|NaN|NaN|NaN|123|1|12
+       - Number(str)函数  转换规则（一元加和 Number（str）函数的转换方法一样）：   
+       1. true 变成 1，false 变成 0；undefined 变成 NaN， null 变成 0；
+       2. 字符串转换成数字的规则：  
+             1. 只包含数字，就直接转换成数字
+             2. 空字符串转成 0，parseInt 空字符串转换成 NaN
+             3. ‘123abc’ 转换成 NaN
+             4. 其他形式"bule"转换成 NaN  
+             5. 如果是对象，调用 obj.valueOf（）方法，返回的结果不能转换成数字，就调用 obj.toString（）方法。
+       - parseInt(str)  忽略字符串前面的空格，直到找到第一个非空格字符，如果第一个字符不是数字字符或者是负号，就返回 NaN；如果是数字，就转换到第一个非数字字符为止。  
+       ‘123abs’ 转换成 123，‘1.2’ 转换成 1，‘abs’ 转换成 NaN，空字符串转换成 NaN。空字符串和 Number 不一样，Number 转换成 0。  
+       此外，注意 parseInt（str, base）还提供了第二个参数，用来标识第一个参数的是几进制。
+       - parseFloat()    
+       
+      乘性操作符的操作数是非数字的时候，会将操作符先使用 Number() 函数转换成数字，再进行计算
+      
+      转换函数|true|false|undefined|null|""|"123abc"|"1.1"|"12a.3"
+ 
+        Number() 一元加、乘性操作符|1|0|NaN|0|0|NaN|1.1|NaN
+ parseInt()|NaN|NaN|NaN|NaN|NaN|123|1|12
      
      
    - NaN 用于表示一个本来要返回数值的操作数，没有返回数值的情况。任何 NaN 的计算操作，结果都是 NaN; NaN 与任何值都不相等，包括它本身。所以 `NaN == NaN;   // false`   
    有一个 isNaN（str） 函数，属于强制转换，用于检测传入的参数是否可以被转换成数字，不是数值返回 true，是数值返回 false   
       
- ```
-  isNaN(NaN);   // true
-  isNaN(10);    // false
-  isNaN('10');  // false  （可以被转换成 10）
-  isNaN('bule');// true （不能转换成数字）
-  isNaN(true);  // false  (bool 只可以被转换成 0， 1)
- ```   
+        ```
+         isNaN(NaN);   // true
+         isNaN(10);    // false
+         isNaN('10');  // false  （可以被转换成 10）
+         isNaN('bule');// true （不能转换成数字）
+         isNaN(true);  // false  (bool 只可以被转换成 0， 1)
+        ```   
     
-isNaN 函数可以传入函数，首先调用函数的 valueOf（），确定该函数的返回值是否可以转换成数值，如果不行，再调用 toString（）方法，确定返回值是否可以转换成数值。  
+        isNaN 函数可以传入函数，首先调用函数的 valueOf（），确定该函数的返回值是否可以转换成数值，如果不行，再调用 toString（）方法，确定返回值是否可以转换成数值。  
    
 - String 类型   
   
@@ -94,10 +94,10 @@ isNaN 函数可以传入函数，首先调用函数的 valueOf（），确定该
 
     - 方法二：   
     
-```
-// 用 ES6 的方法，返回一个 keys 的数组，然后再判断这个数组的长度，长度为 0 就是空对象
-Object.keys(obj)
-```
+        ``` 
+        // 用 ES6 的方法，返回一个 keys 的数组，然后再判断这个数组的长度，长度为 0 就是空对象
+        Object.keys(obj)
+        ```
     
 - 判断空字符串  
    
@@ -127,38 +127,38 @@ ES5 只有函数作用域和全局作用域，没有块作用域，ES6 用 let �
 1. 内层变量可能会覆盖外层变量
 2. 用来计数的循环变量泄露为全局变量
 
-```
-// 具体解释
-// 1. 内层变量可能会覆盖外层变量
-var tmp = new Date();
-
-function f() {
-  console.log(tmp);
-  if (false) {
-    var tmp = 'hello world';
-  }
-}
-
-f(); // undefined
-
-/*
-上面代码的本意是，if代码块的外部使用外层的tmp变量，内部使用内层的tmp变量。  
-但是，函数f执行后，输出结果为undefined，原因在于变量提升，导致内层的tmp变量覆盖了外层的tmp变量。
-*/
-
-// 2. 用来计数的循环变量泄露为全局变量
-var arr = [1, 2, 3];
-for(let i = 0; i < arr.length; i++) {
-    console.log(arr[i])
-}
-
-console.log(i) // 3
-
-/* 
-解释：变量 i 只是用来循环计数，但是循环结束，也就是 i 的使命结束以后， 
-i 并没有消失，还可以在全局范围内访问到，这样变量 i 就泄露成了全局变量 
- */
-```
+    ```
+    // 具体解释
+    // 1. 内层变量可能会覆盖外层变量
+    var tmp = new Date();
+    
+    function f() {
+      console.log(tmp);
+      if (false) {
+        var tmp = 'hello world';
+      }
+    }
+    
+    f(); // undefined
+    
+    /*
+    上面代码的本意是，if代码块的外部使用外层的tmp变量，内部使用内层的tmp变量。  
+    但是，函数f执行后，输出结果为undefined，原因在于变量提升，导致内层的tmp变量覆盖了外层的tmp变量。
+    */
+    
+    // 2. 用来计数的循环变量泄露为全局变量
+    var arr = [1, 2, 3];
+    for(let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+    
+    console.log(i) // 3
+    
+    /* 
+    解释：变量 i 只是用来循环计数，但是循环结束，也就是 i 的使命结束以后， 
+    i 并没有消失，还可以在全局范围内访问到，这样变量 i 就泄露成了全局变量 
+     */
+    ```
 
 #### 1.2 ES5 如何实现块作用域
 
@@ -200,15 +200,15 @@ https://www.cnblogs.com/moqiutao/p/7553423.html
 
 - 以下两种情况分别运行，会怎么样
 
-```
-const obj = {a : 'test'};
-obj.a = "test1";
-```    
-     
-```
-const obj = {a : 'test'};
-obj = {b : “test1”}
-```    
+    ```
+    const obj = {a : 'test'};
+    obj.a = "test1";
+    ```    
+         
+    ```
+    const obj = {a : 'test'};
+    obj = {b : “test1”}
+    ```    
 
 考察引用类型、基本类型和 const 定义常量的知识点。   
 第一组：会把 obj 中的 a 的属性修改成 test1
@@ -223,20 +223,20 @@ obj = {b : “test1”}
 - ES6 Set 去重；Array.from(new Set(array)) 
 - Object 键值对去重；把数组的值存成 Object 的 key 值，比如 Object[value1] = true，在判断另一个值的时候，如果 Object[value2]存在的话，就说明该值是重复的。
 
-```
-function setArr(arr) {
-    let arr0 = [];
-    let obj = {};
-    for (let i of arr) {
-        console.log(i)
-        if(!obj[i]) {
-            arr0.push(i);
-            obj[i] = 1;
+    ```
+    function setArr(arr) {
+        let arr0 = [];
+        let obj = {};
+        for (let i of arr) {
+            console.log(i)
+            if(!obj[i]) {
+                arr0.push(i);
+                obj[i] = 1;
+            }
         }
+        return arr0;
     }
-    return arr0;
-}
-``` 
+    ``` 
 
 ### 3. for of 和 for in 的区别
 
@@ -258,12 +258,12 @@ function setArr(arr) {
 
 - 使用 new 操作符，后面跟 Object 构造函数 
  
-```
-var person = new Object();
-person.name = 'Jhon';
-person.age = 23;
-```
-
+    ```
+    var person = new Object();
+    person.name = 'Jhon';
+    person.age = 23;
+    ```
+    
 - 用对象字面量的方式
 
 ### 1.2 批量创建对象：   
@@ -272,48 +272,48 @@ person.age = 23;
 
 #### 1.2.1 工厂模式
 
-```
-function createPerson(name, age) {
-    var o = new Object（）；
-    o.name = name;
-    o.age = age;
-}
-
-var person1 = createPerson('Jhon', 29)
-```
+    ```
+    function createPerson(name, age) {
+        var o = new Object（）；
+        o.name = name;
+        o.age = age;
+    }
+    
+    var person1 = createPerson('Jhon', 29)
+    ```
 
 优点：可以解决创建多个相似对象的问题   
 缺点：没有解决对象识别的问题。
 
 #### 1.2.2 构造函数模式  
 
-```
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.sayName = function （） {
-        alert(this.name)
+    ```
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        this.sayName = function （） {
+            alert(this.name)
+        }
     }
-}
-
-var person2 = new Person('Jhon', 29)
-```  
+    
+    var person2 = new Person('Jhon', 29)
+    ```  
 
 特点：使用 new 操作符。new 的过程：1.创建一个新的对象；2. this 指向这个新的对象； 3. 执行构造函数里面的代码，给 this 赋值；4. 返回 this 对象，并把这个对象的地址赋值给实例变量名。代码表示就是：      
 
-```
-function Person(name){
-    // 1. 隐式的创建一个新的空对象, 这个空对象不是真正意义上的空对象，它继承了构造函数原型上的属性。 var this = Object.create(Person.prototype); 
-    // 2. 让 this 指向这个新的对象
-    // var this = {}
-    
-    // 3. 执行构造函数中的代码，对 this 赋值
-    this.name = name;
-    
-    // 4. 隐式的返回 this 对象
-    // return this;    
-}
-```      
+    ```
+    function Person(name){
+        // 1. 隐式的创建一个新的空对象, 这个空对象不是真正意义上的空对象，它继承了构造函数原型上的属性。 var this = Object.create(Person.prototype); 
+        // 2. 让 this 指向这个新的对象
+        // var this = {}
+        
+        // 3. 执行构造函数中的代码，对 this 赋值
+        this.name = name;
+        
+        // 4. 隐式的返回 this 对象
+        // return this;    
+    }
+    ```      
    
 具体 new 的过程：
 1. 创建一个空的对象： var obj = {}；
@@ -362,13 +362,13 @@ JavaScript 主要通过原型链实现继承，原型链的构建是通过将父
 2. Object.create 需要再总结一下  
 Object.create 规范化了原型式继承。  
 
-```
-function create(o) {
-    function F() {};
-    F.prototype = o;
-    return new F();
-}
-```
+    ```
+    function create(o) {
+        function F() {};
+        F.prototype = o;
+        return new F();
+    }
+    ```
 
 ### 用 var a = {} 和 var b = Object.create({}) 和 var c = Object.create(null) 有什么区别？  
 
@@ -412,70 +412,70 @@ ES6的继承机制实质上是先创建父类的实例对象this(所以必须先
 生成块级作用域循环绑定事件；结果缓存；封装变量，收敛权限
 - 生成块级作用域循环绑定事件：    
 
-```
-// 创建 10 个 a 标签，点击的时候弹出对应的序号
-// 这种写法是错误的。addEventListener 中的回调函数是异步操作，当 click 事件触发时，同步操作早已结束，即循环早已结束。
-// 所以 alert(i) 中的 i 顺着作用域链去找，因为 JS 没有块级作用域，那么就要去全局作用域去找 i，此时已经循环完了，
-// i 总是10
-// 这时他在 for 循环里面不是一个闭包。但要用 闭包 来解决这个问题。
-var i, a;
-for(i = 0; i < 10; i++) {
-    a = document.createElement("a");
-    a.innerHTML = i + '<br>';
-    a.addEventListener("click", function (e) {
-        e.preventDefault();
-        alert(i);
-    })
-    document.body.appendChild(a)
-}
-
-// 用闭包解决这个问题的正确写法  写一个函数，把 for 里面的内容包进去，这样，i = 0 时，i 作为函数的一个参数，
-// 传进这个立即执行的函数中，
-// i 就进入了这个立即执行函数的函数作用域中，保留了 i 的作用域，“click” 的时候，就能访问到这个 i
-// 实际上创建了 10 个立即执行函数，点击不同的 a 标签，就会访问到不同的 i 的值
-
-/*
-* 在闭包的作用下，定义事件函数的时候，每次循环的 i 值都被封闭起来，这样在函数执行时，会查找定义时候的作用域链，
-* 这个作用域链里面的值，在每次循环的时候都被保留，因此，点击不同的 a 标签会弹出不同的值。
-* */
-var i, a;
-for(i = 0; i < 10; i++) {
-    (function (i) {
+        ```
+        // 创建 10 个 a 标签，点击的时候弹出对应的序号
+        // 这种写法是错误的。addEventListener 中的回调函数是异步操作，当 click 事件触发时，同步操作早已结束，即循环早已结束。
+        // 所以 alert(i) 中的 i 顺着作用域链去找，因为 JS 没有块级作用域，那么就要去全局作用域去找 i，此时已经循环完了，
+        // i 总是10
+        // 这时他在 for 循环里面不是一个闭包。但要用 闭包 来解决这个问题。
+        var i, a;
+        for(i = 0; i < 10; i++) {
             a = document.createElement("a");
             a.innerHTML = i + '<br>';
-
-            a.addEventListener("click", function (event) {
-                event.preventDefault();
+            a.addEventListener("click", function (e) {
+                e.preventDefault();
                 alert(i);
             })
-        document.body.appendChild(a)
-    })(i)
-}
-```   
+            document.body.appendChild(a)
+        }
+        
+        // 用闭包解决这个问题的正确写法  写一个函数，把 for 里面的内容包进去，这样，i = 0 时，i 作为函数的一个参数，
+        // 传进这个立即执行的函数中，
+        // i 就进入了这个立即执行函数的函数作用域中，保留了 i 的作用域，“click” 的时候，就能访问到这个 i
+        // 实际上创建了 10 个立即执行函数，点击不同的 a 标签，就会访问到不同的 i 的值
+        
+        /*
+        * 在闭包的作用下，定义事件函数的时候，每次循环的 i 值都被封闭起来，这样在函数执行时，会查找定义时候的作用域链，
+        * 这个作用域链里面的值，在每次循环的时候都被保留，因此，点击不同的 a 标签会弹出不同的值。
+        * */
+        var i, a;
+        for(i = 0; i < 10; i++) {
+            (function (i) {
+                    a = document.createElement("a");
+                    a.innerHTML = i + '<br>';
+        
+                    a.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        alert(i);
+                    })
+                document.body.appendChild(a)
+            })(i)
+        }
+        ```   
 
 - 结果缓存：
 们开发中会碰到很多情况，设想我们有一个处理过程很耗时的函数对象，每次调用都会花费很长时间，那么我们就需要将计算出来的值存储起来，当调用这个函数的时候，首先在缓存中查找，如果找不到，则进行计算，然后更新缓存并返回值，如果找到了，直接返回查找到的值即可。闭包正是可以做到这一点，因为它不会释放外部的引用，从而函数内部的值可以得以保留。
 - 封装变量，收敛权限    
 
-```
-// 用闭包来这样做的好处是，将 _list 封装起来，外面访问不到这个变量，别人就不会篡改，提高了安全性
-function isFirstLoad() {
-    var _list = [];
-    return function(id) {
-        if(_list.indexOf(id) >= 0) {
-            return false;
-        } else {
-            _list.push(id);
-            return true;
+        ```
+        // 用闭包来这样做的好处是，将 _list 封装起来，外面访问不到这个变量，别人就不会篡改，提高了安全性
+        function isFirstLoad() {
+            var _list = [];
+            return function(id) {
+                if(_list.indexOf(id) >= 0) {
+                    return false;
+                } else {
+                    _list.push(id);
+                    return true;
+                }
+            }
         }
-    }
-}
-var f1 = isFirstLoad();
-f1(10);  // true
-f1(10);  // false
-f1(20);  // true
-
-```   
+        var f1 = isFirstLoad();
+        f1(10);  // true
+        f1(10);  // false
+        f1(20);  // true
+        
+        ```   
 
 #### 1.3 如何实现一个私有变量，用getName方法可以访问，不能直接访问      
 
@@ -499,16 +499,16 @@ ES5 中 this 就是属性或方法“当前”所在的对象。
 
 ### 2.自己实现一个bind函数     
 
-```
-Function.prototype.myBind = function(context) {
-    let self = this;
-    let arg = [...arguments].slice(1);
-    return function() {
-        let newarg = [...arg, ...arguments];
-        self.apply(context, newarg)
-    }
-}
-```
+        ```
+        Function.prototype.myBind = function(context) {
+            let self = this;
+            let arg = [...arguments].slice(1);
+            return function() {
+                let newarg = [...arg, ...arguments];
+                self.apply(context, newarg)
+            }
+        }
+        ```
 
 # 七、能来讲讲JS的语言特性吗     
 
