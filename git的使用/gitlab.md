@@ -32,4 +32,8 @@
      （那么问题来了，当下载到另外的电脑怎么运行呢？
      进入有 package.json 的那个目录，启动终端，执行 `sudo npm install` ，然后再安装一个 nodemon，执行 `sudo npm install -g nodemon` 就可以全局安装 nodemon。然后再执行 `npm start`，就可以正常运行了）
 
-     4.5 然后就是正常的 `git add` 之类的
+     4.5 然后就是正常的 `git add` 之类的    
+     
+     
+#### 1.5 新建了 react-app 上传不了 gitlab
+解决方案：把这个 react-app 隐藏的 .git 文件删除，再重复之前的操作步骤上传就好了
