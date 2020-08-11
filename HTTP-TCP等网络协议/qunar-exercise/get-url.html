@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const getContent = () => {
+        let protocol = window.location.protocol; //返回url 的协议部分，例如： http:，ftp:，maito:等等。
+        let host = window.location.host; //返回url 的主机部分，例如：www.xxx.com
+        let hostname = window.location.hostname; //返回www.xxx.com
+        let href = window.location.href; //返回整个url字符串(在浏览器中就是完整的地址栏)，例如：www.xxx.com/index.php?class_id=3&id=2
+        let pathname = window.location.pathname; //返回/a/index.php或者/index.php
+        let port = window.location.port; //url 的端口部分，如果采用默认的80端口，那么返回值并不是默认的80而是空字符
+        let search = window.location.search; // 问号后面的部分
+        let hash = window.location.hash;
+        let result = {
+            protocol,
+            host,
+            hostname,
+            href,
+            pathname,
+            port,
+            search,
+            hash
+        }
+        console.log('result', result);
+        // return result;
+    }
+
+    getContent()
+</script>
+</body>
+</html>
+
+

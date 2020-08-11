@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button class="btn1">changeHash</button>
+    <button class="btn2">history.pushState</button>
+    <button class="btn3">history.replaceState</button>
+</body>
+<script>
+
+    window.addEventListener('hashchange', () =>{
+        window.location.hash = '#changehash'
+    })
+
+
+
+
+    let btn1 = document.querySelector('.btn1');
+    btn1.addEventListener('click', () => {
+        window.location.hash = '#changehash'
+    })
+
+    let btn2 = document.querySelector('.btn2');
+    btn2.addEventListener('click', () => {
+        window.history.pushState({}, '', '?query=pushState')
+    })
+
+    let btn3 = document.querySelector('.btn3');
+    btn3.addEventListener('click', () => {
+        window.history.replaceState({}, '', '?query=replaceState')
+    })
+
+</script>
+</html>
