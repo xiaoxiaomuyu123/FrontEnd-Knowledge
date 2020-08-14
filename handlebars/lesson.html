@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>Handlebar新闻列表示例</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .news-list > h4 {
+            padding: .3rem .2rem;
+            font-size: .32rem;
+            border-bottom: 1px solid #d2d2d2;
+        }
+        .news-list ul li{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            margin-left: .2rem;
+            padding: .45rem .3rem .45rem 0;
+            border-bottom: 1px solid #d2d2d2;
+            font-size: .3rem;
+            color: #4e4e4e;
+        }
+        .news-list ul li .left{
+            margin-right: .4rem;
+        }
+        .news-list ul li .left span{
+            display: block;
+            width: 1.8rem;
+            height: 1.2rem;
+            background-color: #d2d2d2;
+        }
+        .news-list ul li .right{
+            width: 100%;
+        }
+        .news-list ul li .right h4{
+            font-weight: normal;
+            margin-top: -.1rem;
+            margin-bottom: .12rem;
+        }
+        .news-list ul li .right div{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-between;
+        }
+        .news-list ul li .right div span{
+            display: inline-block;
+            font-size: .24rem;
+        }
+        .news-list ul li .right div span:first-of-type{
+            padding: .02rem .04rem;
+            background-color: #4a6efc;
+            color: #fff;
+        }
+    </style>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '85px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+    </script>
+</head>
+<body>
+<div class="news-list">
+    <h4>新闻列表</h4>
+    <ul id="newsList"></ul>
+</div>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script type="text/x-handlebars-template" id="newsListTemplate">
+    <!--each遍历json数组-->
+    {{#each this}}
+    <li class="flex">
+        <div class="left">
+            <span></span>
+        </div>
+        <div class="right">
+            <h4>{{title}}</h4>
+            <div class="flex">
+                <span>{{tag}}</span>
+                <span>{{date}}</span>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script>
+    var JSON_DATA =
+        [
+            {
+                "title" : "德国iPhone禁售令的最新相关信息",
+                "date" : "2018-12-21",
+                "tag" : "今日热点"
+            },
+            {
+                "title" : "RNG战胜EDG的最新相关信息RNG战胜EDG是怎么回事",
+                "date" : "2018-12-20",
+                "tag" : "电竞热点"
+            },
+            {
+                "title" : "德国iPhone禁售令的最新相关信息",
+                "date" : "2018-12-21",
+                "tag" : "今日热点"
+            },
+            {
+                "title" : "RNG战胜EDG的最新相关信息RNG战胜EDG是怎么回事",
+                "date" : "2018-12-20",
+                "tag" : "电竞热点"
+            }
+        ]
+    ;
+    //通过模板定义的id获取模板
+    var tpl = $("#newsListTemplate").html();
+    //预编译模板
+    var template = Handlebars.compile(tpl);
+    //传入需要填充的数据匹配
+    var html = template(JSON_DATA);
+    //插入模板到ul中
+    $("#newsList").html(html);
+</script>
+</body>
+</html>

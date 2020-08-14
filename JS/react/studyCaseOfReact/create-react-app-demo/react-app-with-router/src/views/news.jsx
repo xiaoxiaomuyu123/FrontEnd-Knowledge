@@ -1,15 +1,14 @@
 import React, {Component} from 'react'
 
-class Home extends Component {
+class News extends Component {
 
     render() {
         return (
             <React.Fragment>
-                <h1>this is home~</h1>
-
+                <h2>this is news page</h2>
             </React.Fragment>
         )
     }
 }
 
-export default Home
+export default News

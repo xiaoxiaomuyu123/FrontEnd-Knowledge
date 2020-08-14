@@ -10,14 +10,14 @@ class App extends Component {
         return (
             <React.Fragment>
                 <div>
-                    <NavLink to='/home'>home</NavLink><br/>
-                    <NavLink to='/about'>about</NavLink>
+                    <NavLink to='/home' activeClassName="selected">home</NavLink><br/>
+                    <NavLink to='/about' activeClassName="selected">about</NavLink>
                 </div>
                 <div>
                     <Switch>
                         <Route path='/home' component={Home}/>
-                        <Route path='/about' xomponent={About}/>
-                        <Redirect to='/home'/>
+                        <Route path='/about' component={About}/>
+                        <Redirect to='/about'/>
                     </Switch>
                 </div>
             </React.Fragment>

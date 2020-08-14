@@ -94,7 +94,6 @@ json 是一种轻量级的数据交换格式
     
     所有的 string 必须是双引号包裹，key 必须是 string；没有注释，也不允许注释
     
-
 ### 3.2 转换方法   
 
 - `JSON.parse` 解析 json
