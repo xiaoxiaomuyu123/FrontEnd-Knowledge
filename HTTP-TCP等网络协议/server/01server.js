@@ -6,19 +6,20 @@ const fs = require('fs');
 http.createServer(function (request, response) {
     console.log('request come', request.url);
 
-    // /* 'fs.readFileSync' 同步读取 html 内容，注意一定要设置 'utf-8' 读取，
-    //    这样读取的格式才是 字符串不设置的话就读取的时候就是以二进制的方式读取 */
-    // const html = fs.readFileSync('../client/test.html', 'utf8');
-    // response.writeHead(200, {
-    //     /*
-    //     设置 'Content-Type': 'text/html'，为的是让浏览器识别成 html，
-    //     不设置的话，浏览器会识别成字符串，不过这一句，node 会帮我们默认加上
-    //     所以不设置也可以。
-    //     如果设置成 'Content-Type': 'text/plain'，浏览器会把文件当成字符串显示出来
-    //     */
-    //     'Content-Type': 'text/html'
-    // })
-    // response.end(html);
+    /* 'fs.readFileSync' 同步读取 html 内容，注意一定要设置 'utf-8' 读取，
+       这样读取的格式才是 字符串不设置的话就读取的时候就是以二进制的方式读取 */
+    const html = fs.readFileSync('../client/test.html', 'utf8');
+    response.writeHead(200, {
+        /*
+        设置 'Content-Type': 'text/html'，为的是让浏览器识别成 html，
+        不设置的话，浏览器会识别成字符串，不过这一句，node 会帮我们默认加上
+        所以不设置也可以。
+        如果设置成 'Content-Type': 'text/plain'，浏览器会把文件当成字符串显示出来
+        */
+        'Content-Type': 'text/html',
+        'Cache-Control': 'max-age=200000'
+    })
+    response.end(html);
 
 
     // 前端需要在 访问 缓存 'script.js' 文件，所以需要做一个路径判断
@@ -42,41 +43,45 @@ http.createServer(function (request, response) {
 
 
     //
-    if (request.url === '/') {
-        const html = fs.readFileSync('../client/test.html', 'utf-8');
-        response.writeHead(200, {
-            'Content-Type': 'text/html'
-        })
-        response.end(html);
-    }
-
-    if (request.url === '/script.js') {
-        console.log(request.headers);
-        response.writeHead(200, {
-            'Content-Type': 'text/javascript',
-            'Cache-Control': 'max-age=200000, no-store',
-            'Last-Modified': '123',
-            'Etag': '777'
-        })
-        const etag = request.headers['if-none-match'];
-        if(etag === '777') {
-            response.writeHead(304, {
-                'Content-Type': 'text/javascript',
-                'Cache-Control': 'max-age=200000, no-store',
-                'Last-Modified': '123',
-                'Etag': '777'
-            })
-            response.end('');
-        } else {
-            response.writeHead (200, {
-                'Content-Type': 'text/javascript',
-                'Cache-Control': 'max-age=200000, no-store',
-                'Last-Modified': '123',
-                'Etag': '777'
-            })
-            response.end('console.log("script loaded")');
-        }
-    }
+    // if (request.url === '/') {
+    //     const html = fs.readFileSync('../client/test.html', 'utf-8');
+    //     response.writeHead(200, {
+    //         'Content-Type': 'text/html',
+    //         'Cache-Control': 'max-age=200000',
+    //         // 'Cache-Control': 'public'
+    //         // 'Last-Modified': '123',
+    //         // 'Etag': '777'
+    //     })
+    //     response.end(html);
+    // }
+    //
+    // if (request.url === '/script.js') {
+    //     console.log(request.headers);
+    //     response.writeHead(200, {
+    //         'Content-Type': 'text/javascript',
+    //         'Cache-Control': 'max-age=200000',
+    //         'Last-Modified': '123',
+    //         'Etag': '777'
+    //     })
+    //     const etag = request.headers['if-none-match'];
+    //     if(etag === '777') {
+    //         response.writeHead(304, {
+    //             'Content-Type': 'text/javascript',
+    //             'Cache-Control': 'max-age=200000',
+    //             'Last-Modified': '123',
+    //             'Etag': '777'
+    //         })
+    //         response.end('');
+    //     } else {
+    //         response.writeHead (200, {
+    //             'Content-Type': 'text/javascript',
+    //             'Cache-Control': 'max-age=200000',
+    //             'Last-Modified': '123',
+    //             'Etag': '777'
+    //         })
+    //         response.end('console.log("script loaded")');
+    //     }
+    // }
 
     // 需要监听一个端口，因为所有的服务需要监听一个端口才能访问
 }).listen(8888)
