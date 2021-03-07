@@ -122,6 +122,13 @@
 </body>
 <script>
     let e = document.querySelector(".box");
-    // e.addEventListener("webkitAnimationEnd", () => {alert("动画结束")})
+    let count = 0;
+    e.addEventListener("webkitAnimationEnd", () => {
+        count = count + 1
+        if(count < 3) {
+            return;
+        }
+        alert("整体动画结束")
+    })
 </script>
 </html>
