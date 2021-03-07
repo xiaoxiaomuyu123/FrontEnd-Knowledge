@@ -22,7 +22,12 @@
             100%{
                 transform: rotateY(360deg);
             }
-
+        }
+        @keyframes front {
+            0%{}
+            100%{
+                transform: rotateY(180deg);
+            }
         }
         .box {
             position: relative;
@@ -32,7 +37,8 @@
             /*transition: all 1s;*/
             transform-style: preserve-3d;
             transform-origin: top center;
-            animation: rotate 2s linear 5;
+            animation: rotate 0.4s linear 1, front 0.2s linear 0.4s forwards;
+            /*animation: rotate 0.5s linear 5;*/
         }
         .front img,
         .back img
