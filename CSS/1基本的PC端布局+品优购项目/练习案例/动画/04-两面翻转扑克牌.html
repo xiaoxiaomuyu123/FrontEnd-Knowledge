@@ -29,6 +29,44 @@
                 transform: rotateY(180deg);
             }
         }
+        /*@keyframes shake0 {*/
+        /*    0%{*/
+        /*        transform: rotate(0deg);*/
+        /*    }*/
+        /*    100%{*/
+        /*        transform: rotate(15deg);*/
+        /*    }*/
+        /*}*/
+        /*@keyframes shake1 {*/
+        /*    0%{*/
+        /*        transform: rotate(15deg);*/
+        /*    }*/
+        /*    100%{*/
+        /*        transform: rotate(-15deg);*/
+        /*    }*/
+        /*}*/
+        /*@keyframes shake2 {*/
+        /*    0%{*/
+        /*        transform: rotate(15deg);*/
+        /*    }*/
+        /*    100%{*/
+        /*        transform: rotate(0deg);*/
+        /*    }*/
+        /*}*/
+        @keyframes shake {
+            0%{
+                transform: rotate(0deg);
+            }
+            33.333% {
+                transform: rotate(15deg);
+            }
+            66.666% {
+                transform: rotate(-15deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
         .box {
             position: relative;
             width: 235px;
@@ -36,9 +74,17 @@
             margin: 100px auto;
             /*transition: all 1s;*/
             transform-style: preserve-3d;
-            transform-origin: top center;
-            animation: rotate 0.4s linear 1, front 0.2s linear 0.4s forwards;
-            /*animation: rotate 0.5s linear 5;*/
+            transform-origin: center center;
+
+            /*抖动*/
+            /*animation: shake0 .1s backwards, shake1 .2s 4 alternate .1s, shake2 .1s .9s;*/
+
+            /* dahu */
+            animation: shake 0.2s 4, rotate 0.4s 1.2s 1, front 0.2s 1.6s forwards;
+
+
+
+            /*animation: shake .2s 4 alternate backwards, shake2 .1s 0.8 , rotate 0.4s linear 1.2s 1, front 0.2s linear 1.6s forwards;*/
         }
         .front img,
         .back img
@@ -74,4 +120,8 @@
     </div>
 </div>
 </body>
+<script>
+    let e = document.querySelector(".box");
+    // e.addEventListener("webkitAnimationEnd", () => {alert("动画结束")})
+</script>
 </html>
