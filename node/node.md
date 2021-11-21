@@ -62,3 +62,18 @@ require 特性：
 - 确定请求的方式，是 post 还是 get
 - 设计接口返回的数据格式，成功的时候返回什么，失败的时候返回什么
 - 接收的参数都有什么
+
+#### 七、nodejs 的模块系统
+
+##### 7.1 module 和 exports
+
+```
+let module = {
+    exports: {
+        sum: sum 
+    }
+}
+
+let exports = module.exports
+
+```
